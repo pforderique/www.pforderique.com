@@ -1,0 +1,24 @@
+.SearchBar-container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.SearchBar-Input {
+  font-size: large;
+}
+
+.SearchBar-button {
+  font-size: large;
+  border-radius: var(--s);
+  border-color: var(--green);
+  /* border-width: var(--s); */
+  /* opacity: 0; */
+  background-color: var(--green);
+  color: var(--green);
+}
+
+.SearchBar-button:hover {
+  opacity: 0.2;
+  background-color: var(--green);
+}
