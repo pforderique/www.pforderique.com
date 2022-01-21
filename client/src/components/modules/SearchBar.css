@@ -8,17 +8,13 @@
   font-size: large;
 }
 
-.SearchBar-button {
-  font-size: large;
-  border-radius: var(--s);
-  border-color: var(--green);
-  /* border-width: var(--s); */
-  /* opacity: 0; */
-  background-color: var(--green);
-  color: var(--green);
+.SearchBar-btn {
+  background-color: transparent;
+  border-color: var(--primary-highlight);
+  color: var(--primary-highlight);
+  margin-left: var(--xs);
 }
 
-.SearchBar-button:hover {
-  opacity: 0.2;
-  background-color: var(--green);
+.SearchBar-btn:hover {
+  background-color: var(--primary-highlight);
 }

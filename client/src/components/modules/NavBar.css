@@ -1,29 +1,24 @@
 .NavBar-container {
   background-color: var(--primary-darkest);
   padding: var(--m) var(--l);
-  display: flex;
-  justify-content: space-between;
-  color: var(--white);
+  color: var(--green);
 }
 
 .NavBar-leftside {
-  margin-right: 55%;
+  margin-right: 45vw;
   display: flex;
   align-items: center;
 }
 
 .NavBar-logo {
-  width: 2%;
+  width: 3vw;
+  height: auto;
   margin-right: var(--s);
 }
 
 .NavBar-title {
-  /* display: flex;
-  align-items: center;
-
-  font-size: large;
-  color: var(--green); */
-  margin-right: var(--xl);
+  margin-right: var(--l);
+  font-size: 1.2em;
 }
 
 .NavBar-linkContainer {
@@ -37,14 +32,27 @@
   margin-right: var(--l);
   opacity: 1;
   text-decoration: none;
-  font-size: large;
+  font-size: 1.2em;
 }
 
 .NavBar-link:hover {
   opacity: 0.6;
+  text-decoration: none;
 }
 
 .NavBar-item {
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 1400px) {
+  .NavBar-leftside {
+    margin-right: 30vw;
+  }
+}
+
+@media (max-width: 720px) {
+  .NavBar-logo {
+    width: 6vw;
+  }
 }

@@ -9,24 +9,19 @@ import "../../utilities.css";
  */
 const SearchBar = (props) => {
   return (
-    <>
-      <form className="SearchBar-container" onSubmit={props.onSearch}>
-        <input
-          className=" SearchBar-Input form-control me-2"
-          type="search"
-          placeholder="Search Projects"
-          aria-label="Search"
-          name="name"
-          onChange={props.handleSearchType}
-        />
-        <button
-          className="SearchBar-button btn btn-outline-secondary"
-          type="submit"
-        >
-          Search
-        </button>
-      </form>
-    </>
+    <form className="NavBar-input d-flex ml-auto" onSubmit={props.onSearch}>
+      <input
+        className="form-control me-2"
+        type="search"
+        placeholder="Search Projects"
+        aria-label="Search"
+        name="name"
+        onChange={props.handleSearchType}
+      />
+      <button className="SearchBar-btn btn" type="submit">
+        Search
+      </button>
+    </form>
   );
 };
 

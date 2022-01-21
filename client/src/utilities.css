@@ -28,7 +28,8 @@
   --green: #64ffda;
   --green-tint: rgba(100, 255, 218, 0.1);
 
-  --primary-highlight: rgb(255, 242, 64);
+  /* --primary-highlight: rgb(255, 242, 64); */
+  --primary-highlight: #64ffda;
 
   --grey: #b3b0b0;
   --white: #e6f1ff;
