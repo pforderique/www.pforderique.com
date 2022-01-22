@@ -4,6 +4,7 @@ import { get, post } from "../../utilities.js";
 import AboutMe from "../modules/AboutMe";
 import HomeHeader from "../modules/HomeHeader";
 import Loading from "../modules/Loading";
+import SkillsSection from "../modules/SkillsSection";
 import "../../utilities.css";
 
 const Home = (props) => {
@@ -19,6 +20,7 @@ const Home = (props) => {
       <div className="u-main-container">
         <HomeHeader profileinfo={profileinfo} />
         <AboutMe profileinfo={profileinfo} />
+        <SkillsSection />
       </div>
     </>
   );
