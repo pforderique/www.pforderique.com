@@ -1,13 +1,23 @@
 import React, { useEffect, useState } from "react";
 
 import { get, post } from "../../utilities.js";
+import HomeHeader from "../modules/HomeHeader";
+import Loading from "../modules/Loading";
+import "../../utilities.css";
 
 const Home = (props) => {
-  useEffect(() => {}, []);
+  const [profileinfo, setProfile] = useState(undefined);
+  useEffect(() => {
+    get("/api/profile").then((profile) => setProfile(profile));
+  }, []);
+
+  if (!profileinfo) return <Loading />;
 
   return (
     <>
-      <div>Hello!</div>
+      <div className="u-main-container">
+        <HomeHeader profileinfo={profileinfo} />
+      </div>
     </>
   );
 };

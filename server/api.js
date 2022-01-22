@@ -11,12 +11,17 @@ const mongoose = require("mongoose");
 
 // model imports here
 const Experience = require("./models/experience");
+const Profile = require("./models/profile");
 const Project = require("./models/project");
 
 // api endpoints:
 const router = express.Router();
 
 // API methods here
+router.get("/profile", (req, res) => {
+  Profile.findOne({}).then((profile) => res.send(profile));
+});
+
 router.get("/projects", (req, res) => {
   if (!req.query.q) req.query.q = "";
   const query = { title: { $regex: ".*" + req.query.q + ".*", $options: "i" } };

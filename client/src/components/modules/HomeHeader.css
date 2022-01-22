@@ -1,0 +1,37 @@
+.HomeHeader-top {
+  margin-bottom: var(--xl);
+  background-color: var(--primary-darkest);
+}
+
+.HomeHeader-name {
+  font-size: 5em;
+  font-family: var(--font-sans);
+  font-weight: bold;
+}
+
+.HomeHeader-header {
+  font-size: 3em;
+  font-family: var(--font-sans);
+  font-weight: bold;
+  color: var(--grey);
+}
+
+.HomeHeader-bio {
+  font-size: large;
+  max-width: 700px;
+  color: var(--grey);
+  margin-bottom: var(--l);
+}
+
+hr {
+  border: 1px solid var(--grey);
+}
+
+@media (max-width: 650px) {
+  .HomeHeader-name {
+    font-size: 2.7em;
+  }
+  .HomeHeader-header {
+    font-size: 1.6em;
+  }
+}

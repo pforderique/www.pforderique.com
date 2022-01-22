@@ -1,18 +1,11 @@
-.SearchBar-container {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-}
-
-.SearchBar-Input {
-  font-size: large;
+.SearchBar-input {
+  margin-right: var(--xs);
 }
 
 .SearchBar-btn {
   background-color: transparent;
   border-color: var(--primary-highlight);
   color: var(--primary-highlight);
-  margin-left: var(--xs);
 }
 
 .SearchBar-btn:hover {

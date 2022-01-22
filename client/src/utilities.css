@@ -19,7 +19,7 @@
 @import url("https://kit.fontawesome.com/ecfdf53d85.js");
 
 :root {
-  --primary-darkest: #020c1b;
+  --primary-darkest: #031227;
   --primary-dark: #0a192f;
   --primary-light: #112240;
   --primary-lightest: #233554;
@@ -44,11 +44,18 @@
   --xl: 48px;
 
   --primary-font: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
-  /* --primary-font: "Goldman", "Open Sans", sans-serif; */
+  --secondary-font: "Goldman", "Open Sans", sans-serif;
+  --font-sans: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
+    system-ui, sans-serif;
 }
 
 html {
   background-color: var(--primary-darkest);
+}
+
+div {
+  background-color: var(--primary-darkest);
+  color: var(--white);
 }
 
 body {
@@ -64,15 +71,25 @@ form {
 
 .u-main-container {
   background-color: var(--primary-darkest);
-  padding: var(--l);
-  margin: var(--l);
-  border-radius: var(--l);
+  margin: var(--m) 10vw;
 }
 
-.u-white-container {
-  background-color: var(--white);
-  padding: var(--m);
-  border-radius: var(--l);
+.u-highlight {
+  color: var(--primary-highlight);
+}
+
+.u-btn {
+  background-color: transparent;
+  border-color: var(--primary-highlight);
+  border-radius: var(--m);
+  color: var(--primary-highlight);
+  padding: var(--s) var(--m);
+}
+
+.u-btn:hover {
+  background-color: var(--primary-highlight);
+  color: var(--primary-darkest);
+  text-decoration: none;
 }
 
 .u-transparent {
@@ -118,22 +135,4 @@ form {
 
 .u-textCenter {
   text-align: center;
-}
-
-.u-relative {
-  position: relative;
-}
-
-.u-pointer {
-  cursor: pointer;
-}
-
-.u-link {
-  color: var(--primary);
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.u-link:hover {
-  color: var(--primary--dim);
 }

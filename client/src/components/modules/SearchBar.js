@@ -9,16 +9,16 @@ import "../../utilities.css";
  */
 const SearchBar = (props) => {
   return (
-    <form className="NavBar-input d-flex ml-auto" onSubmit={props.onSearch}>
+    <form className="d-flex ml-auto" onSubmit={props.onSearch}>
       <input
-        className="form-control me-2"
+        className="SearchBar-input form-control me-2"
         type="search"
         placeholder="Search Projects"
         aria-label="Search"
         name="name"
         onChange={props.handleSearchType}
       />
-      <button className="SearchBar-btn btn" type="submit">
+      <button className="btn SearchBar-btn" type="submit">
         Search
       </button>
     </form>
