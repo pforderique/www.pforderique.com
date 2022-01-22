@@ -12,7 +12,7 @@ const HomeHeader = (props) => {
   return (
     <>
       <div className="HomeHeader-top">
-        <div className="u-highlight">Hi, my name is</div>
+        <div className="u-highlight u-large">Hi, my name is</div>
         <h1 className="HomeHeader-name">{props.profileinfo.name}</h1>
         <h2 className="HomeHeader-header">{props.profileinfo.header}</h2>
       </div>
