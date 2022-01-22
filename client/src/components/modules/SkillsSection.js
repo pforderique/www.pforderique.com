@@ -8,7 +8,7 @@ import "./SkillsSection.css";
 /**
  * The Skills section in the home page
  */
-const SkillsSection = (props) => {
+const SkillsSection = () => {
   const [skills, setSkills] = useState(undefined);
   useEffect(() => {
     get("/api/skills").then((s) => {

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import { get, post } from "../../utilities.js";
 import AboutMe from "../modules/AboutMe";
+import ExperienceSection from "../modules/ExperienceSection";
 import HomeHeader from "../modules/HomeHeader";
 import Loading from "../modules/Loading";
 import SkillsSection from "../modules/SkillsSection";
@@ -21,6 +22,7 @@ const Home = (props) => {
         <HomeHeader profileinfo={profileinfo} />
         <AboutMe profileinfo={profileinfo} />
         <SkillsSection />
+        <ExperienceSection />
       </div>
     </>
   );

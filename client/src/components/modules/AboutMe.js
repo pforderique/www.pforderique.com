@@ -5,7 +5,7 @@ import "./AboutMe.css";
 import "../../utilities.css";
 
 /**
- * The navigation bar at the top of all pages.
+ * The About Me section of the homepage
  */
 const AboutMe = (props) => {
   const linksAndIcons = [
