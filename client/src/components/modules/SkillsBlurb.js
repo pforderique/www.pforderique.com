@@ -1,16 +1,20 @@
 import React from "react";
 
-import "./SkillsBlurb.css";
+import "../../utilities.css";
 
 /**
  * A Blrub for skills in one category
+ *
+ * Proptypes
+ * @param {string} title of skills blurb
+ * @param {array} skills to show
  */
 const SkillsBlurb = (props) => {
   return (
     <section>
-      <h5>{props.title}</h5>
+      <h5 className="u-highlight">{props.title}</h5>
       {!props.skills && "Loading..."}
-      skills!
+      <div>{props.skills.map((s) => s.name + " ")}</div>
     </section>
   );
 };
