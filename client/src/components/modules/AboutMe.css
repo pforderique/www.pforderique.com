@@ -1,0 +1,49 @@
+.AboutMe-container {
+  margin: var(--xxl) 10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.AboutMe-header {
+  display: flex;
+  margin-left: 0;
+}
+
+.AboutMe-title {
+  font-weight: bold;
+  font-size: 2em;
+  max-width: 1100px;
+  position: relative;
+  margin: 0 2vw var(--m) 0;
+}
+
+.AboutMe-line {
+  min-width: 25vw;
+  justify-self: start;
+}
+
+.AboutMe-des {
+  max-width: 600px;
+  margin-right: 3vw;
+}
+
+.AboutMe-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.AboutMe-image {
+  width: 18vw;
+}
+
+@media (max-width: 800px) {
+  .AboutMe-container {
+    margin: var(--xxl) 0vw;
+  }
+  .AboutMe-image {
+    padding: 0 5vw;
+    width: 100%;
+  }
+}

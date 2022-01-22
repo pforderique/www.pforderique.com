@@ -21,7 +21,8 @@ const HomeHeader = (props) => {
         <a
           // href={require("../../public/docs/resume.pdf")}
           // href={resume}
-          download="OrderiquePieroResume"
+          href="../../public/docs/resume.pdf"
+          download="rules"
         >
           <button className="u-btn">download resume</button>
         </a>

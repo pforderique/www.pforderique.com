@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import { get, post } from "../../utilities.js";
+import AboutMe from "../modules/AboutMe";
 import HomeHeader from "../modules/HomeHeader";
 import Loading from "../modules/Loading";
 import "../../utilities.css";
@@ -17,6 +18,7 @@ const Home = (props) => {
     <>
       <div className="u-main-container">
         <HomeHeader profileinfo={profileinfo} />
+        <AboutMe aboutmes={profileinfo.aboutmes} />
       </div>
     </>
   );

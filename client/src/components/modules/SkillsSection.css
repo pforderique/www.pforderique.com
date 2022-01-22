@@ -1,0 +1,29 @@
+.SkillsSection-title {
+  margin: var(--xl) auto;
+  text-align: center;
+  font-size: 2em;
+  max-width: 600px;
+  position: relative;
+}
+
+.SkillsSection-title:before {
+  content: "";
+  display: block;
+  width: 25vw;
+  height: 2px;
+  background: var(--grey);
+  left: 0;
+  top: 50%;
+  position: absolute;
+}
+
+.SkillsSection-title:after {
+  content: "";
+  display: block;
+  width: 25vw;
+  height: 2px;
+  background: var(--grey);
+  right: 0;
+  top: 50%;
+  position: absolute;
+}
