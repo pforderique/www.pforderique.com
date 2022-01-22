@@ -6,6 +6,7 @@
 .SkillsSection-title {
   margin: 0 auto var(--m) auto;
   text-align: center;
+  font-weight: bold;
   font-size: 2em;
   max-width: 800px;
   position: relative;

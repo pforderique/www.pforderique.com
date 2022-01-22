@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 
+import SkillsBlurb from "./SkillsBlurb.js";
 import { get } from "../../utilities.js";
 import "../../utilities.css";
 import "./SkillsSection.css";
 
 /**
- * The navigation bar at the top of all pages.
+ * The Skills section in the home page
  */
 const SkillsSection = (props) => {
   const [skills, setSkills] = useState(undefined);
@@ -21,18 +22,7 @@ const SkillsSection = (props) => {
         <h1 className="SkillsSection-title">Skills</h1>
       </div>
       <section className="SkillsSection-section">
-        <section>
-          <h5>Programming Languages</h5>
-          {!skills && "Loading..."}
-        </section>
-        <section>
-          <h5>Programming Languages</h5>
-          test
-        </section>
-        <section>
-          <h5>Programming Languages</h5>
-          test
-        </section>
+        <SkillsBlurb title="Programming Languages" />
       </section>
     </div>
   );

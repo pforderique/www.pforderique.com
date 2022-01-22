@@ -1,7 +1,7 @@
 import { Link } from "@reach/router";
 import React, { useEffect, useState } from "react";
 
-// import resume from "../../public/docs/resume.pdf";
+import resume from "../../public/docs/resume.pdf";
 import "../../utilities.css";
 import "./HomeHeader.css";
 
@@ -18,15 +18,9 @@ const HomeHeader = (props) => {
       </div>
       <div>
         <p className="HomeHeader-bio">{props.profileinfo.bio}</p>
-        <a
-          // href={require("../../public/docs/resume.pdf")}
-          // href={resume}
-          href="../../public/docs/resume.pdf"
-          download="rules"
-        >
+        <a href={resume} download="OrderiquePieroResume">
           <button className="u-btn">download resume</button>
         </a>
-        {/* <hr /> */}
       </div>
     </>
   );
