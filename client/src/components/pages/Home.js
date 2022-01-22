@@ -18,7 +18,7 @@ const Home = (props) => {
     <>
       <div className="u-main-container">
         <HomeHeader profileinfo={profileinfo} />
-        <AboutMe aboutmes={profileinfo.aboutmes} />
+        <AboutMe profileinfo={profileinfo} />
       </div>
     </>
   );

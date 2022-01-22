@@ -1,5 +1,5 @@
 .AboutMe-container {
-  margin: var(--xxl) 10vw;
+  margin: var(--xxl) 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,26 +24,61 @@
 }
 
 .AboutMe-des {
-  max-width: 600px;
-  margin-right: 3vw;
+  max-width: 35vw;
+  /* margin-right: 3vw; */
 }
 
 .AboutMe-section {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
+  margin: 0 0;
+}
+
+.AboutMe-social {
+  display: flex;
+  justify-content: space-around;
+  /* justify-content: center; */
+}
+
+.AboutMe-social > a {
+  cursor: pointer;
+  color: var(--primary-highlight);
 }
 
 .AboutMe-image {
-  width: 18vw;
+  width: 25%;
+  margin: 0 2vw;
+  border-radius: var(--m);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1350px) {
+  .AboutMe-des {
+    max-width: 50vw;
+  }
+  .AboutMe-image {
+    margin: var(--m) 1vw 0;
+    width: 20vw;
+  }
+}
+@media (max-width: 1200px) {
+  .AboutMe-des {
+    max-width: 70%;
+  }
+  .AboutMe-image {
+    margin: var(--m) 5vw 0;
+    width: 70%;
+  }
+}
+
+@media (max-width: 850px) {
   .AboutMe-container {
     margin: var(--xxl) 0vw;
   }
+  .AboutMe-des {
+    max-width: 100%;
+  }
   .AboutMe-image {
-    padding: 0 5vw;
-    width: 100%;
+    width: 80%;
   }
 }

@@ -5,6 +5,11 @@ const ProfileSchema = new mongoose.Schema({
   header: String, // (ex: CS Gates Scholar at MIT)
   bio: String,
   aboutmes: [String],
+  github: String,
+  linkedin: String,
+  instagram: String,
+  facebook: String,
+  email: String,
 });
 
 // compile model from schema
