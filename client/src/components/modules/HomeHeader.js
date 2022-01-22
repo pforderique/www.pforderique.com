@@ -1,12 +1,14 @@
-import { Link } from "@reach/router";
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 import resume from "../../public/docs/resume.pdf";
 import "../../utilities.css";
 import "./HomeHeader.css";
 
 /**
- * The navigation bar at the top of all pages.
+ * The Hero Heading located in the home page
+ *
+ * Proptypes
+ * @param {object} profileinfo object
  */
 const HomeHeader = (props) => {
   return (
