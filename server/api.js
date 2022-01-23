@@ -23,6 +23,10 @@ router.get("/profile", (req, res) => {
   Profile.findOne({}).then((profile) => res.send(profile));
 });
 
+router.get("/project", (req, res) => {
+  Project.findById(req.query.projectid).then((project) => res.send(project));
+});
+
 router.get("/projects", (req, res) => {
   if (!req.query.q) req.query.q = "";
   const query = { title: { $regex: ".*" + req.query.q + ".*", $options: "i" } };
