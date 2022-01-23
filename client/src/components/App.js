@@ -15,15 +15,6 @@ const App = () => {
   const [searchText, setSearchText] = useState("");
   const [projects, setProjects] = useState([]);
 
-  useEffect(() => {
-    // load in the icon js
-    const script = document.createElement("script");
-    script.src = "https://kit.fontawesome.com/ecfdf53d85.js";
-    script.async = true;
-
-    document.body.appendChild(script);
-  }, []);
-
   const handleSearchType = (event) => setSearchText(event.target.value);
 
   const onSearch = async () => {
