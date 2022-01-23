@@ -6,10 +6,40 @@
   display: grid; /*make block after certain pxs*/
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 8fr;
+  margin-bottom: var(--m);
 }
 
 .Experience-header {
   padding-left: var(--m);
+}
+
+.Experience-des {
+  margin-bottom: var(--m);
+}
+
+a {
+  color: var(--primary-highlight);
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--grey);
+}
+
+.Experience-bullets {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+.Experience-bullets li {
+  padding: 0 0 var(--xs) 0;
+}
+
+.Experience-bullets li:before {
+  content: "\2192 \020";
+  color: var(--primary-highlight);
 }
 
 img {
@@ -17,16 +47,14 @@ img {
   border-radius: var(--s);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .Experience-top {
-    display: block;
+    grid-template-columns: 1fr 4fr;
   }
-  .img-container {
-    display: flex;
-    justify-content: center;
-  }
-  img {
-    width: 30%;
-    margin-bottom: var(--m);
+}
+
+@media (max-width: 700px) {
+  .Experience-top {
+    grid-template-columns: 1fr 2fr;
   }
 }

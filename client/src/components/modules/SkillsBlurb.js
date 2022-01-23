@@ -12,7 +12,7 @@ import "../../utilities.css";
 const SkillsBlurb = (props) => {
   return (
     <section>
-      <h5 className="u-highlight">{props.title}</h5>
+      <h5 className="u-highlight u-bold">{props.title}</h5>
       {!props.skills && "Loading..."}
       <div>{props.skills.map((s) => s.name + " ")}</div>
     </section>
