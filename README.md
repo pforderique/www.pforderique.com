@@ -6,8 +6,6 @@ This repo hosts the source files for my personal website. The website uses an Ex
 
 ## Public API Documentaion
 
-(All routes start with /api)
-
 GET /api/profile<br />
 Params: None<br />
 Returns basic profile information like name, bio, etc.
