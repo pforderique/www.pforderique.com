@@ -1,5 +1,5 @@
 .ExperienceSection-container {
-  margin: var(--xxl) 0 0 0;
+  margin: var(--l) 0 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,6 +8,7 @@
 .ExperienceSection-header {
   display: flex;
   margin-left: 0;
+  width: 82%;
 }
 
 .ExperienceSection-title {
@@ -21,11 +22,7 @@
 .ExperienceSection-line {
   min-width: 25vw;
   justify-self: start;
-}
-
-.ExperienceSection-des {
-  max-width: 35vw;
-  /* margin-right: 3vw; */
+  margin-left: 0;
 }
 
 .ExperienceSection-section {
@@ -35,50 +32,20 @@
   margin: 0 0;
 }
 
-.ExperienceSection-social {
-  display: flex;
-  justify-content: space-around;
-  /* justify-content: center; */
+@media (max-width: 1400px) {
+  .ExperienceSection-line {
+    width: 30vw;
+  }
 }
 
-.ExperienceSection-social > a {
-  cursor: pointer;
-  color: var(--primary-highlight);
-}
-
-.ExperienceSection-image {
-  width: 25%;
-  margin: 0 2vw;
-  border-radius: var(--m);
-}
-
-@media (max-width: 1350px) {
+@media (max-width: 1100px) {
   .ExperienceSection-des {
-    max-width: 50vw;
-  }
-  .ExperienceSection-image {
-    margin: var(--m) 1vw 0;
-    width: 20vw;
-  }
-}
-@media (max-width: 1200px) {
-  .ExperienceSection-des {
-    max-width: 70%;
-  }
-  .ExperienceSection-image {
-    margin: var(--m) 5vw 0;
-    width: 70%;
+    margin: auto 10vw;
   }
 }
 
-@media (max-width: 850px) {
-  .ExperienceSection-container {
-    margin: var(--xxl) 0vw;
-  }
-  .ExperienceSection-des {
-    max-width: 100%;
-  }
-  .ExperienceSection-image {
-    width: 80%;
+@media (max-width: 900px) {
+  .ExperienceSection-header {
+    width: 100%;
   }
 }
