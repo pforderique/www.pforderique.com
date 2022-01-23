@@ -1,9 +1,7 @@
 .ProjectModule-container {
   border: var(--xs) solid var(--primary-lightest);
   border-radius: var(--m);
-  /* background-color: var(--primary-light); */
   padding: var(--m) var(--l);
-  /* max-width: 20vw; */
   width: 100%;
 }
 
@@ -21,11 +19,3 @@
 .ProjectModule-details > * {
   background-color: transparent;
 }
-
-/* .ProjectModule-des > a {
-    color: var(--primary-highlight);
-}
-
-.ProjectModule-des > a:hover {
-    color: var(--primary-highlight);
-} */

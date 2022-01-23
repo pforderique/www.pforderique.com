@@ -24,7 +24,13 @@ router.get("/profile", (req, res) => {
 });
 
 router.get("/project", (req, res) => {
-  Project.findById(req.query.projectid).then((project) => res.send(project));
+  Project.findById(req.query.projectid, (err, project) => {
+    if (err) res.send(err);
+    else {
+      project.views += 1;
+      project.save().then((p) => res.send(p));
+    }
+  });
 });
 
 router.get("/projects", (req, res) => {
@@ -32,6 +38,7 @@ router.get("/projects", (req, res) => {
   const query = { title: { $regex: ".*" + req.query.q + ".*", $options: "i" } };
   Project.find(query)
     .limit(20)
+    .sort({ views: -1 })
     .then((results) => res.send(results));
 });
 

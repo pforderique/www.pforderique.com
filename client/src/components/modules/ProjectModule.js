@@ -1,4 +1,5 @@
 import React from "react";
+import { navigate } from "@reach/router";
 
 import "./ProjectModule.css";
 import "../../utilities.css";
@@ -14,7 +15,10 @@ const ProjectModule = (props) => {
   const link = `https://drive.google.com/uc?export=view&id=${props.project.driveid}`;
 
   return (
-    <div className="ProjectModule-container">
+    <div
+      className="ProjectModule-container"
+      onClick={() => navigate(`/project/${props.project._id}`)}
+    >
       <h3 className="u-highlight u-textCenter u-bold">{props.project.title}</h3>
       <img src={link}></img>
       <section className="ProjectModule-details">
