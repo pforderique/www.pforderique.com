@@ -1,0 +1,15 @@
+.ProjectGrid-grid {
+  display: grid;
+  gap: 3vw;
+
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  margin: var(--xl) 0;
+  justify-items: center;
+}
+
+@media (max-width: 1100px) {
+  .ProjectGrid-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

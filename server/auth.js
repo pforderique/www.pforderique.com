@@ -39,7 +39,7 @@ router.post("/project", (req, res) => {
     title: req.body.title,
     date: req.body.date,
     views: req.body.views ? Number(req.body.views) : 0,
-    imageLink: req.body.imageLink,
+    driveid: req.body.driveid,
     shortDes: req.body.shortDes,
     longDes: req.body.longDes,
     playable: req.body.playable ? Boolean(req.body.playable) : false,

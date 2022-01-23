@@ -4,7 +4,7 @@ const ProjectSchema = new mongoose.Schema({
   title: String,
   date: String,
   views: Number,
-  imageLink: String,
+  driveid: String, // the id given by google drive when shared
   shortDes: String,
   longDes: String,
   playable: Boolean,
