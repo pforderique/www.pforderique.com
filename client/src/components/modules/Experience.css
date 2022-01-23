@@ -1,0 +1,11 @@
+.Experience-container {
+  margin-bottom: var(--xxl);
+}
+
+.Experience-top {
+  display: inline; /*make block after certain pxs*/
+}
+
+img {
+  width: 100px;
+}

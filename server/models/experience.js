@@ -5,7 +5,7 @@ const ExperienceSchema = new mongoose.Schema({
   company: String,
   location: String,
   date: String,
-  imageLink: String,
+  recency: Number,
   description: String,
   links: [String], // (if any)
   linksDes: [String],

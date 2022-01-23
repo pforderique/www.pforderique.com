@@ -35,8 +35,9 @@ const SkillsSection = () => {
         <hr className="SkillsSection-line" />
       </div>
       <section className="SkillsSection-section">
-        {sections.map((section) => (
+        {sections.map((section, idx) => (
           <SkillsBlurb
+            key={`key_${idx}`}
             title={section[0]}
             skills={skills.filter((s) => s.type === section[1])}
           />

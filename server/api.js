@@ -32,7 +32,9 @@ router.get("/projects", (req, res) => {
 });
 
 router.get("/experiences", (req, res) => {
-  Experience.find({}).then((results) => res.send(results));
+  Experience.find({})
+    .sort({ recency: -1 })
+    .then((results) => res.send(results));
 });
 
 router.get("/skills", (req, res) => {
