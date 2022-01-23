@@ -43,7 +43,10 @@ const NavBar = (props) => {
             </Link>
           </ul>
         </div>
-        <SearchBar />
+        <SearchBar
+          handleSearchType={props.handleSearchType}
+          onSearch={props.onSearch}
+        />
       </div>
     </nav>
   );

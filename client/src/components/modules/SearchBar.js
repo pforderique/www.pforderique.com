@@ -15,7 +15,6 @@ const SearchBar = (props) => {
         type="search"
         placeholder="Search Projects"
         aria-label="Search"
-        name="name"
         onChange={props.handleSearchType}
       />
       <button className="btn SearchBar-btn" type="submit">
