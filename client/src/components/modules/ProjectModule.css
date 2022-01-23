@@ -11,3 +11,21 @@
   background-color: var(--primary-light);
   cursor: pointer;
 }
+
+.ProjectModule-details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--s);
+}
+
+.ProjectModule-details > * {
+  background-color: transparent;
+}
+
+/* .ProjectModule-des > a {
+    color: var(--primary-highlight);
+}
+
+.ProjectModule-des > a:hover {
+    color: var(--primary-highlight);
+} */

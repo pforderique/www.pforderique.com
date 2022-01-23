@@ -17,6 +17,20 @@ const ProjectModule = (props) => {
     <div className="ProjectModule-container">
       <h3 className="u-highlight u-textCenter u-bold">{props.project.title}</h3>
       <img src={link}></img>
+      <section className="ProjectModule-details">
+        <div>
+          <span className="u-bold">Date: </span>
+          {props.project.date}
+        </div>
+        <div>
+          <span className="u-bold">Views: </span>
+          {props.project.views}
+        </div>
+      </section>
+      <section className="ProjectModule-des">
+        {props.project.shortDes + " See more "}
+        <a href={props.project.link}>here</a>.
+      </section>
     </div>
   );
 };

@@ -68,6 +68,15 @@ body {
   font-weight: 300;
 }
 
+a {
+  color: var(--primary-highlight);
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--grey);
+}
+
 form {
   flex-grow: 1;
 }

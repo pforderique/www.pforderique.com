@@ -17,15 +17,6 @@
   margin-bottom: var(--m);
 }
 
-a {
-  color: var(--primary-highlight);
-}
-
-a:hover {
-  text-decoration: none;
-  color: var(--grey);
-}
-
 .Experience-bullets {
   list-style: none;
   margin-left: 0;

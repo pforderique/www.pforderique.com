@@ -1,4 +1,3 @@
-import { Link } from "@reach/router";
 import React, { useEffect, useState } from "react";
 
 import "./SearchBar.css";
@@ -6,6 +5,10 @@ import "../../utilities.css";
 
 /**
  * The navigation bar at the top of all pages.
+ *
+ * Proptypes
+ * @param {function} onSearch callback when form submitted
+ * @param {function} handleSearchType callback
  */
 const SearchBar = (props) => {
   return (
