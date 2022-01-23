@@ -1,38 +1,21 @@
 .SkillsSection-container {
   display: flex;
   flex-direction: column;
-  margin: var(--xxl) 0 0 0;
+  margin: var(--xl) 0 0 0;
 }
 
 .SkillsSection-title {
-  margin: 0 auto var(--m) auto;
+  margin: 0 2vw var(--m) 2vw;
   text-align: center;
   font-weight: bold;
   font-size: 2em;
-  max-width: 800px;
+  max-width: 900px;
   position: relative;
 }
 
-.SkillsSection-title:before {
-  content: "";
-  display: block;
-  width: 18vw;
-  height: 2px;
-  background: var(--grey);
-  left: 0;
-  top: 50%;
-  position: absolute;
-}
-
-.SkillsSection-title:after {
-  content: "";
-  display: block;
-  width: 18vw;
-  height: 2px;
-  background: var(--grey);
-  right: 0;
-  top: 50%;
-  position: absolute;
+.SkillsSection-header {
+  display: flex;
+  justify-content: center;
 }
 
 .SkillsSection-section {
@@ -40,15 +23,32 @@
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 0 10vw;
+  margin: 0 7vw;
+}
+
+.SkillsSection-line {
+  min-width: 25vw;
+  justify-self: start;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .SkillsSection-section > section {
   margin-bottom: 4vh;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1400px) {
+  .SkillsSection-section {
+    justify-content: start;
+    margin: 0 7vw;
+  }
+}
+
+@media (max-width: 900px) {
   .SkillsSection-section {
     margin: 0 0;
+  }
+  .SkillsSection-line {
+    min-width: 18vw;
   }
 }

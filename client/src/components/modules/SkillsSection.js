@@ -7,6 +7,9 @@ import "./SkillsSection.css";
 
 /**
  * The Skills section in the home page
+ *
+ * Proptypes
+ * @param {array} skills list of all skills
  */
 const SkillsSection = () => {
   const [skills, setSkills] = useState(undefined);
@@ -18,24 +21,26 @@ const SkillsSection = () => {
 
   if (!skills) return <div>Loading skills...</div>;
 
+  const sections = [
+    ["Programming Languages", "programming language"],
+    ["Technologies", "technology"],
+    ["Certificates", "certificate"],
+  ];
+
   return (
     <div className="SkillsSection-container">
       <div className="SkillsSection-header">
+        <hr className="SkillsSection-line" />
         <h1 className="SkillsSection-title">Skills</h1>
+        <hr className="SkillsSection-line" />
       </div>
       <section className="SkillsSection-section">
-        <SkillsBlurb
-          title="Programming Languages"
-          skills={skills.filter((s) => s.type === "programming language")}
-        />
-        <SkillsBlurb
-          title="Technologies"
-          skills={skills.filter((s) => s.type === "technology")}
-        />
-        <SkillsBlurb
-          title="Certificates"
-          skills={skills.filter((s) => s.type === "certificate")}
-        />
+        {sections.map((section) => (
+          <SkillsBlurb
+            title={section[0]}
+            skills={skills.filter((s) => s.type === section[1])}
+          />
+        ))}
       </section>
     </div>
   );
