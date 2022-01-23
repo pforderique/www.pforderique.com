@@ -1,11 +1,32 @@
 .Experience-container {
-  margin-bottom: var(--xxl);
+  margin-bottom: var(--xl);
 }
 
 .Experience-top {
-  display: inline; /*make block after certain pxs*/
+  display: grid; /*make block after certain pxs*/
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 8fr;
+}
+
+.Experience-header {
+  padding-left: var(--m);
 }
 
 img {
-  width: 100px;
+  width: 100%;
+  border-radius: var(--s);
+}
+
+@media (max-width: 900px) {
+  .Experience-top {
+    display: block;
+  }
+  .img-container {
+    display: flex;
+    justify-content: center;
+  }
+  img {
+    width: 30%;
+    margin-bottom: var(--m);
+  }
 }
