@@ -10,6 +10,7 @@ const ProfileSchema = new mongoose.Schema({
   instagram: String,
   facebook: String,
   email: String,
+  resumedriveid: String,
 });
 
 // compile model from schema

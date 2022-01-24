@@ -7,7 +7,6 @@
 |
 */
 const express = require("express");
-const mongoose = require("mongoose");
 
 // model imports here
 const Experience = require("./models/experience");

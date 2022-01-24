@@ -29,6 +29,7 @@
     "nodemon": "^2.0.6",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
+    "react-pdf": "^5.6.0",
     "react-router-dom": "^5.2.0",
     "url-loader": "^4.1.1"
   },

@@ -1,0 +1,21 @@
+.ResumePage-frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: var(--l) auto;
+  width: 80%;
+  height: 100vh;
+  border-radius: var(--m);
+}
+
+@media (max-width: 1000px) {
+  .ResumePage-frame {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .ResumePage-frame {
+    height: 100vw;
+  }
+}
