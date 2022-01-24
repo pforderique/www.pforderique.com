@@ -13,6 +13,7 @@ const Experience = require("./models/experience");
 const Profile = require("./models/profile");
 const Project = require("./models/project");
 const Skill = require("./models/skill");
+const Visitor = require("./models/visitor");
 
 // api endpoints:
 const router = express.Router();
@@ -52,6 +53,19 @@ router.get("/skills", (req, res) => {
   Skill.find(query)
     .sort({ importance: -1 })
     .then((skills) => res.send(skills));
+});
+
+router.get("/visitor", (req, res) => {
+  Visitor.findOne({})
+    .sort({ number: -1 })
+    .then((visitor) => {
+      const newvisitor = new Visitor({
+        number: visitor.number + 1,
+        date: Date.now(),
+      });
+
+      newvisitor.save().then((v) => res.send(v));
+    });
 });
 
 // anything else falls to this "not found" case

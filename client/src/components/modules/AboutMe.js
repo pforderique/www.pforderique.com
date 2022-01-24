@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import portrait from "../../public/me.jpg";
+import { get } from "../../utilities.js";
 import "./AboutMe.css";
 import "../../utilities.css";
 
@@ -8,6 +9,12 @@ import "../../utilities.css";
  * The About Me section of the homepage
  */
 const AboutMe = (props) => {
+  const [visitor, setVisitor] = useState(undefined);
+
+  useEffect(() => {
+    get("/api/visitor").then((v) => setVisitor(v));
+  }, []);
+
   const linksAndIcons = [
     [props.profileinfo.github, "fa-github"],
     [props.profileinfo.linkedin, "fa-linkedin"],
@@ -22,6 +29,12 @@ const AboutMe = (props) => {
       </div>
       <section className="AboutMe-section">
         <section className="AboutMe-des">
+          {visitor && (
+            <p>
+              <span className="u-highlight u-bold">Welcome!</span>
+              {` You are visitor ${visitor.number}!`}
+            </p>
+          )}
           {props.profileinfo.aboutmes.map((des, idx) => (
             <p key={`key_${idx}`}>{des}</p>
           ))}
