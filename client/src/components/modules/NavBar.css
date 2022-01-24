@@ -16,9 +16,15 @@
   margin-right: var(--s);
 }
 
-.NavBar-title {
+.NavBar-title,
+.NavBar-title:visited {
   margin-right: var(--l);
   font-size: 1.2em;
+  color: var(--primary-highlight);
+}
+
+.NavBar-title:hover {
+  opacity: 0.5;
 }
 
 .NavBar-linkContainer {

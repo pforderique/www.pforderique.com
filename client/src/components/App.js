@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Router, navigate } from "@reach/router";
 
 import Home from "./pages/Home";
@@ -27,7 +27,9 @@ const App = () => {
     <>
       <NavBar onType={handleSearchType} onSearch={onSearch} />
       <Router>
-        <Home path="/" />
+        {["/", "/home"].map((path) => (
+          <Home path={path} />
+        ))}
         <Projects path="/projects/:searchtext" />
         <Projects path="/projects/" searchtext={""} />
         <SingleProject path="/project/:projectid" />

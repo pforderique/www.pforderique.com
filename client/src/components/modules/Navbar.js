@@ -1,4 +1,4 @@
-import { Link } from "@reach/router";
+import { Link, navigate } from "@reach/router";
 import React from "react";
 
 import logo from "../../public/logo.png";
@@ -13,9 +13,9 @@ import "../../utilities.css";
 const NavBar = (props) => {
   return (
     <nav className="NavBar-container navbar navbar-expand-lg navbar-dark">
-      <a className="NavBar-title navbar-brand">
+      <a className="NavBar-title navbar-brand" href="/home">
         <img src={logo} className="NavBar-logo" />
-        pforderique
+        <span className="u-highlight">pforderique</span>
       </a>
       <button
         className="navbar-toggler"
@@ -32,7 +32,7 @@ const NavBar = (props) => {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <div className="NavBar-leftside">
           <ul className="navbar-nav mr-auto">
-            <Link to="/" className="NavBar-link">
+            <Link to="/home" className="NavBar-link">
               Home
             </Link>
             <Link to="/projects" className="NavBar-link">
