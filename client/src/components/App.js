@@ -27,9 +27,8 @@ const App = () => {
     <>
       <NavBar onType={handleSearchType} onSearch={onSearch} />
       <Router>
-        {["/", "/home"].map((path) => (
-          <Home path={path} />
-        ))}
+        <Home path="/" />
+        <Home path="home" />
         <Projects path="/projects/:searchtext" />
         <Projects path="/projects/" searchtext={""} />
         <SingleProject path="/project/:projectid" />

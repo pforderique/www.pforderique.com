@@ -29,7 +29,7 @@
 }
 
 .Experience-bullets li:before {
-  content: "\2192 \020";
+  content: "\25B7 \020";
   color: var(--primary-highlight);
 }
 

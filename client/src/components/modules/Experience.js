@@ -38,8 +38,8 @@ const Experience = (props) => {
           ))}
       </section>
       <ul className="Experience-bullets">
-        {props.exp.bullets.map((bullet) => (
-          <li>{bullet}</li>
+        {props.exp.bullets.map((bullet, idx) => (
+          <li key={`key_${idx}`}>{bullet}</li>
         ))}
       </ul>
     </section>
