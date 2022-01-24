@@ -9,7 +9,7 @@ const ProjectSchema = new mongoose.Schema({
   longDes: String,
   playable: Boolean,
   link: String,
-  gitHubLink: String,
+  github: String,
 });
 
 // compile model from schema

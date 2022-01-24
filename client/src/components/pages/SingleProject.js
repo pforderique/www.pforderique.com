@@ -30,7 +30,14 @@ const SingleProject = (props) => {
   return (
     <div className="SingleProject-container u-main-container">
       <section className="SingleProject-subcontainer">
-        <h2 className="u-highlight u-bold u-textCenter">{project.title}</h2>
+        <h2 className="u-highlight u-bold">
+          {project.github && (
+            <a href={project.github} target="_blank">
+              <i className="SingleProject-icon fab fa-github u-highlight"></i>
+            </a>
+          )}
+          {project.title + " "}
+        </h2>
         <section className="SingleProject-details">
           <h5>
             <span className="u-bold">Date: </span>
@@ -42,8 +49,13 @@ const SingleProject = (props) => {
           </h5>
         </section>
         <span>
-          {project.longDes + " See more "}
-          <a href={project.link}>here.</a>
+          {project.longDes}
+          {project.link && (
+            <span>
+              {" "}
+              See more <a href={project.link}>here.</a>
+            </span>
+          )}
         </span>
       </section>
       <div className="SingleProject-img-container">

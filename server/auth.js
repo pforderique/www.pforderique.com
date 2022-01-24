@@ -44,7 +44,7 @@ router.post("/project", (req, res) => {
     longDes: req.body.longDes,
     playable: req.body.playable ? Boolean(req.body.playable) : false,
     link: req.body.link,
-    githubLink: req.body.githubLink ? req.body.githubLink : null,
+    github: req.body.githubLink ? req.body.githubLink : null,
   });
   project.save().then((p) => res.send(p));
 });
