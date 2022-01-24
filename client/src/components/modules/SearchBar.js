@@ -15,9 +15,7 @@ const SearchBar = (props) => {
     <form className="d-flex ml-auto" onSubmit={props.onSearch}>
       <input
         className="SearchBar-input form-control me-2"
-        type="search"
         placeholder="Search Projects"
-        aria-label="Search"
         onChange={props.handleSearchType}
       />
       <button className="btn SearchBar-btn" type="submit">

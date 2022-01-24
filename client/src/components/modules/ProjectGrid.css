@@ -17,5 +17,6 @@
 @media (max-width: 800px) {
   .ProjectGrid-grid {
     grid-template-columns: 1fr;
+    gap: 5vw;
   }
 }
