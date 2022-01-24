@@ -2,13 +2,14 @@ import React, { useEffect, useState } from "react";
 import { Router, navigate } from "@reach/router";
 
 import Home from "./pages/Home";
+import NavBar from "./modules/Navbar.js";
 import NotFound from "./pages/NotFound";
 import Projects from "./pages/Projects";
 import ResumePage from "./pages/ResumePage";
+import Secret from "./pages/Secret";
 import SingleProject from "./pages/SingleProject";
-import { get } from "../utilities.js";
-import NavBar from "./modules/Navbar.js";
 
+import { get } from "../utilities.js";
 import "../utilities.css";
 
 /**
@@ -41,6 +42,7 @@ const App = () => {
         {profileinfo && (
           <ResumePage path="/resume" driveid={profileinfo.resumedriveid} />
         )}
+        <Secret path="/secret" />
         <NotFound default />
       </Router>
     </>

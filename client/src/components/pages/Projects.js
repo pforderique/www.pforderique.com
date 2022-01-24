@@ -19,9 +19,9 @@ const Projects = (props) => {
   if (projects.length === 0)
     return (
       <div className="u-main-container u-textCenter">
-        No projects found. Try a different query. Click{" "}
+        No projects found. Try a different search. Feeling curious? Click{" "}
         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">here</a> for a
-        polynomial-time algorithm of the Halting Problem
+        polynomial-time algorithm of the Halting Problem.
       </div>
     );
 
