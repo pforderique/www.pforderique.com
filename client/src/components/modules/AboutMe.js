@@ -12,7 +12,7 @@ const AboutMe = (props) => {
   const [visitor, setVisitor] = useState(undefined);
 
   useEffect(() => {
-    // get("/api/visitor").then((v) => setVisitor(v));
+    get("/api/visitor").then((v) => setVisitor(v));
   }, []);
 
   const linksAndIcons = [
