@@ -37,6 +37,7 @@
 .SingleProject-icon:hover {
   cursor: pointer;
   opacity: 0.5;
+  transform: rotate(-4deg);
 }
 
 @media (max-width: 1250px) {

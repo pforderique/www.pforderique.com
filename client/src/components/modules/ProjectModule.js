@@ -16,7 +16,7 @@ const ProjectModule = (props) => {
 
   return (
     <div
-      className="ProjectModule-container"
+      className="ProjectModule-container u-fadeDown"
       onClick={() => navigate(`/project/${props.project._id}`)}
     >
       <h3 className="u-highlight u-textCenter u-bold">{props.project.title}</h3>

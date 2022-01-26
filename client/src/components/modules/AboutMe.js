@@ -12,7 +12,7 @@ const AboutMe = (props) => {
   const [visitor, setVisitor] = useState(undefined);
 
   useEffect(() => {
-    get("/api/visitor").then((v) => setVisitor(v));
+    // get("/api/visitor").then((v) => setVisitor(v));
   }, []);
 
   const linksAndIcons = [
@@ -22,7 +22,7 @@ const AboutMe = (props) => {
     [props.profileinfo.facebook, "fa-facebook"],
   ];
   return (
-    <div className="AboutMe-container">
+    <div className="AboutMe-container u-fadeDownDelayed">
       <div className="AboutMe-header">
         <h1 className="AboutMe-title">About Me</h1>
         <hr className="AboutMe-line" />

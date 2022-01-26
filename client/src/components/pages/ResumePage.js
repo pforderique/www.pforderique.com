@@ -13,7 +13,7 @@ const ResumePage = (props) => {
     <>
       <div className="u-main-container">
         <h3 className="u-textCenter u-bold u-highlight">Resume</h3>
-        <a className="ResumePage-frame">
+        <a className="ResumePage-frame u-fadeDown">
           <iframe
             className="ResumePage-frame"
             src={link}

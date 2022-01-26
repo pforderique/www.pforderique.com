@@ -12,7 +12,7 @@ import "./HomeHeader.css";
  */
 const HomeHeader = (props) => {
   return (
-    <>
+    <div className="u-fadeDown">
       <div className="HomeHeader-top">
         <div className="u-highlight u-large">Hi, my name is</div>
         <h1 className="HomeHeader-name">{props.profileinfo.name}</h1>
@@ -24,7 +24,7 @@ const HomeHeader = (props) => {
           <button className="u-btn">download resume</button>
         </a>
       </div>
-    </>
+    </div>
   );
 };
 
