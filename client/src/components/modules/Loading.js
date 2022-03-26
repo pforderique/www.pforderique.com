@@ -50,7 +50,7 @@ class Loading extends React.Component {
           id="info"
           style={{
             position: "absolute",
-            top: "52vh",
+            top: "50%",
             width: "100%",
             textAlign: "center",
             display: "block",
