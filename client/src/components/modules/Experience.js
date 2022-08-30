@@ -7,8 +7,8 @@ import "../../utilities.css";
  * An experience module for one job
  *
  * Proptypes
- * @param {object} exp to show
- * @param {object} images containg all image links
+ * @param {object} exp the experience to show
+ * @param {object} images containing all image links
  */
 const Experience = (props) => {
   const link = `_${props.exp.company.toLowerCase().replace(/\s+/g, "")}`;
