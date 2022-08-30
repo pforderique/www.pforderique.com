@@ -6,6 +6,7 @@ import mathnasium from "../../public/companyimages/mathnasium.png";
 import microsoft from "../../public/companyimages/microsoft.png";
 import mitos from "../../public/companyimages/mitos.png";
 import nvidia from "../../public/companyimages/nvidia.png";
+import google from "../../public/companyimages/google.png";
 
 import { get } from "../../utilities.js";
 import "./ExperienceSection.css";
@@ -22,6 +23,7 @@ const ExperienceSection = () => {
     _mitos: mitos,
     _microsoft: microsoft,
     _nvidia: nvidia,
+    _google: google,
   };
 
   useEffect(() => {
