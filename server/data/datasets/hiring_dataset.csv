@@ -1,0 +1,216 @@
+gender,ssc_percentage,ssc_board,hsc_percentage,hsc_board,degree_percentage,work_experience,emp_test_percentage,mba_percent,status
+M,67,Others,91,Others,58,No,55,58.8,Placed
+M,79.33,Central,78.33,Others,77.48,Yes,86.5,66.28,Placed
+M,65,Central,68,Central,64,No,75,57.8,Placed
+M,56,Central,52,Central,52,No,66,59.43,Not Placed
+M,85.8,Central,73.6,Central,73.3,No,96.8,55.5,Placed
+M,55,Others,49.8,Others,67.25,Yes,55,51.58,Not Placed
+F,46,Others,49.2,Others,79,No,74.28,53.29,Not Placed
+M,82,Central,64,Central,66,Yes,67,62.14,Placed
+M,73,Central,79,Central,72,No,91.34,61.29,Placed
+M,58,Central,70,Central,61,No,54,52.21,Not Placed
+M,58,Central,61,Central,60,Yes,62,60.85,Placed
+M,69.6,Central,68.4,Central,78.3,Yes,60,63.7,Placed
+F,47,Central,55,Others,65,No,62,65.04,Not Placed
+F,77,Central,87,Central,59,No,68,68.63,Placed
+M,62,Central,47,Central,50,No,76,54.96,Not Placed
+F,65,Central,75,Central,69,Yes,72,64.66,Placed
+M,63,Central,66.2,Central,65.6,Yes,60,62.54,Placed
+F,55,Central,67,Central,64,No,60,67.28,Not Placed
+F,63,Central,66,Central,64,No,68,64.08,Not Placed
+M,60,Others,67,Others,70,Yes,50.48,77.89,Placed
+M,62,Others,65,Others,66,No,50,56.7,Placed
+F,79,Others,76,Others,85,No,95,69.06,Placed
+F,69.8,Others,60.8,Others,72.23,No,55.53,68.81,Placed
+F,77.4,Others,60,Others,64.74,Yes,92,63.62,Placed
+M,76.5,Others,97.7,Others,78.86,No,97.4,74.01,Placed
+F,52.58,Others,54.6,Central,50.2,Yes,76,65.33,Not Placed
+M,71,Others,79,Others,66,Yes,94,57.55,Placed
+M,63,Others,67,Others,66,No,68,57.69,Placed
+M,76.76,Others,76.5,Others,67.5,Yes,73.35,64.15,Placed
+M,62,Central,67,Central,58,No,77,51.29,Not Placed
+F,64,Central,73.5,Central,73,No,52,56.7,Placed
+F,67,Central,53,Central,65,No,64,58.32,Not Placed
+F,61,Central,81,Central,66.4,No,50.89,62.21,Placed
+F,87,Others,65,Others,81,Yes,88,72.78,Placed
+M,62,Others,51,Others,52,No,68.44,62.77,Not Placed
+F,69,Central,78,Central,72,No,71,62.74,Placed
+M,51,Central,44,Central,57,No,64,51.45,Not Placed
+F,79,Central,76,Central,65.6,No,58,55.47,Placed
+F,73,Others,58,Others,66,No,53.7,56.86,Placed
+M,81,Others,68,Others,64,No,93,62.56,Placed
+F,78,Central,77,Others,80,No,60,66.72,Placed
+F,74,Others,63.16,Others,65,Yes,65,69.76,Not Placed
+M,49,Others,39,Central,65,No,63,51.21,Not Placed
+M,87,Others,87,Others,68,No,95,62.9,Placed
+F,77,Others,73,Others,81,Yes,89,69.7,Placed
+F,76,Central,64,Central,72,No,58,66.53,Not Placed
+F,70.89,Others,71.98,Others,65.6,No,68,71.63,Not Placed
+M,63,Central,60,Central,57,Yes,78,54.55,Placed
+M,63,Others,62,Others,68,No,64,62.46,Placed
+F,50,Others,37,Others,52,No,65,56.11,Not Placed
+F,75.2,Central,73.2,Central,68.4,No,65,62.98,Placed
+M,54.4,Central,61.12,Central,56.2,No,67,62.65,Not Placed
+F,40.89,Others,45.83,Others,53,No,71.2,65.49,Not Placed
+M,80,Others,70,Others,72,No,87,71.04,Placed
+F,74,Central,60,Others,69,No,78,65.56,Placed
+M,60.4,Central,66.6,Others,65,No,71,52.71,Placed
+M,63,Others,71.4,Others,61.4,No,68,66.88,Placed
+M,68,Central,76,Central,74,No,80,63.59,Placed
+M,74,Central,62,Others,68,No,74,57.99,Placed
+M,52.6,Central,65.58,Others,72.11,No,57.6,56.66,Placed
+M,74,Central,70,Central,72,Yes,60,57.24,Placed
+M,84.2,Central,73.4,Central,66.89,No,61.6,62.48,Placed
+F,86.5,Others,64.2,Others,67.4,No,59,59.69,Placed
+M,61,Others,70,Others,64,No,68.5,59.5,Not Placed
+M,80,Others,73,Others,75,No,61,58.78,Placed
+M,54,Others,47,Others,57,No,89.69,57.1,Not Placed
+M,83,Others,74,Others,66,No,68.92,58.46,Placed
+M,80.92,Others,78.5,Others,67,No,68.71,60.99,Placed
+F,69.7,Central,47,Central,72.7,No,79,59.24,Not Placed
+M,73,Central,73,Central,66,Yes,70,68.07,Placed
+M,82,Others,61,Others,62,No,89,65.45,Placed
+M,75,Others,70.29,Others,71,No,95,66.94,Placed
+M,84.86,Others,67,Others,78,No,95.5,68.53,Placed
+M,64.6,Central,83.83,Others,71.72,No,86,59.75,Placed
+M,56.6,Central,64.8,Central,70.2,No,84.27,67.2,Placed
+F,59,Central,62,Others,77.5,No,74,67,Not Placed
+F,66.5,Others,70.4,Central,71.93,No,61,64.27,Placed
+M,64,Others,80,Others,65,Yes,69,57.65,Placed
+M,84,Others,90.9,Others,64.5,No,86.04,59.42,Placed
+F,69,Central,62,Central,66,No,75,67.99,Not Placed
+F,69,Others,62,Others,69,Yes,67,62.35,Placed
+M,81.7,Others,63,Others,67,Yes,86,70.2,Placed
+M,63,Central,67,Central,74,No,82,60.44,Not Placed
+M,84,Others,79,Others,68,Yes,84,66.69,Placed
+M,70,Central,63,Others,70,Yes,55,62,Placed
+F,83.84,Others,89.83,Others,77.2,Yes,78.74,76.18,Placed
+M,62,Others,63,Others,64,No,67,57.03,Placed
+M,59.6,Central,51,Central,60,No,75,59.08,Not Placed
+F,66,Central,62,Central,73,No,58,64.36,Placed
+F,84,Others,75,Others,69,Yes,62,62.36,Placed
+F,85,Others,90,Others,82,No,92,68.03,Placed
+M,52,Central,57,Central,50.8,No,67,62.79,Not Placed
+F,60.23,Central,69,Central,66,No,72,59.47,Placed
+M,52,Central,62,Central,54,No,72,55.41,Not Placed
+M,58,Central,62,Central,64,No,53.88,54.97,Placed
+M,73,Central,78,Others,65,Yes,95.46,62.16,Placed
+F,76,Central,70,Central,76,Yes,66,64.44,Placed
+F,70.5,Central,62.5,Others,61,No,93.91,69.03,Not Placed
+F,69,Central,73,Central,65,No,70,57.31,Placed
+M,54,Central,82,Others,63,No,50,59.47,Not Placed
+F,45,Others,57,Others,58,Yes,56.39,64.95,Not Placed
+M,63,Central,72,Central,68,No,78,60.44,Placed
+F,77,Others,61,Others,68,Yes,57.5,61.31,Placed
+M,73,Central,78,Central,73,Yes,85,65.83,Placed
+M,69,Central,63,Others,65,Yes,55,58.23,Placed
+M,59,Central,64,Others,58,No,85,55.3,Not Placed
+M,61.08,Others,50,Others,54,No,71,65.69,Not Placed
+M,82,Others,90,Others,83,No,80,73.52,Placed
+M,61,Central,82,Central,69,No,84,58.31,Placed
+M,52,Central,63,Others,65,Yes,86,56.09,Not Placed
+F,69.5,Central,70,Central,72,No,57.2,54.8,Placed
+M,51,Others,54,Others,61,No,60,60.64,Not Placed
+M,58,Others,61,Others,61,No,58,53.94,Placed
+F,73.96,Others,79,Others,67,No,72.15,63.08,Placed
+M,65,Central,68,Others,69,No,53.7,55.01,Placed
+F,73,Others,63,Others,66,No,89,60.5,Placed
+M,68.2,Central,72.8,Central,66.6,Yes,96,70.85,Placed
+M,77,Others,75,Others,73,No,80,67.05,Placed
+M,76,Central,80,Central,78,Yes,97,70.48,Placed
+M,60.8,Central,68.4,Central,64.6,Yes,82.66,64.34,Placed
+M,58,Others,40,Others,59,No,73,58.81,Not Placed
+F,64,Central,67,Others,69.6,Yes,55.67,71.49,Placed
+F,66.5,Central,66.8,Central,69.3,Yes,80.4,71,Placed
+M,74,Others,59,Others,73,Yes,60,56.7,Placed
+M,67,Central,71,Central,64.33,Yes,64,61.26,Placed
+F,84,Central,73,Central,73,No,75,73.33,Placed
+F,79,Others,61,Others,75.5,Yes,70,68.2,Placed
+F,72,Others,60,Others,69,No,55.5,58.4,Placed
+M,80.4,Central,73.4,Central,77.72,Yes,81.2,76.26,Placed
+M,76.7,Central,89.7,Others,66,Yes,90,68.55,Placed
+M,62,Central,65,Others,60,No,84,64.15,Not Placed
+F,74.9,Others,57,Others,62,Yes,80,60.78,Placed
+M,67,Others,68,Others,64,Yes,74.4,53.49,Placed
+M,73,Central,64,Others,77,Yes,65,60.98,Placed
+F,77.44,Central,92,Others,72,Yes,94,67.13,Placed
+F,72,Central,56,Others,69,No,55.6,65.63,Placed
+F,47,Central,59,Central,64,No,78,61.58,Not Placed
+M,67,Others,63,Central,72,No,56,60.41,Placed
+F,82,Others,64,Others,73,Yes,96,71.77,Placed
+M,77,Central,70,Central,59,Yes,58,54.43,Placed
+M,65,Central,64.8,Others,69.5,Yes,56,56.94,Placed
+M,66,Central,64,Central,60,No,60,61.9,Not Placed
+M,85,Central,60,Others,73.43,Yes,60,61.29,Placed
+M,77.67,Others,64.89,Others,70.67,No,89,60.39,Placed
+M,52,Others,50,Others,61,No,60,58.52,Not Placed
+M,89.4,Others,65.66,Others,71.25,No,72,63.23,Placed
+M,62,Central,63,Others,66,No,85,55.14,Placed
+M,70,Central,74,Central,65,No,83,62.28,Placed
+F,77,Central,86,Central,56,No,57,64.08,Placed
+M,44,Central,58,Central,55,Yes,64.25,58.54,Not Placed
+M,71,Central,58.66,Central,58,Yes,56,61.3,Placed
+M,65,Central,65,Central,75,No,83,58.87,Placed
+F,75.4,Others,60.5,Central,84,No,98,65.25,Placed
+M,49,Others,59,Others,65,Yes,86,62.48,Placed
+M,53,Central,63,Others,60,Yes,70,53.2,Placed
+M,51.57,Others,74.66,Others,59.9,Yes,56.15,65.99,Not Placed
+M,84.2,Central,69.4,Central,65,Yes,80,52.72,Placed
+M,66.5,Central,62.5,Central,60.9,No,93.4,55.03,Placed
+M,67,Others,63,Others,64,No,60,61.87,Not Placed
+M,52,Central,49,Others,58,No,62,60.59,Not Placed
+M,87,Central,74,Central,65,Yes,75,72.29,Placed
+M,55.6,Others,51,Others,57.5,No,57.63,62.72,Not Placed
+M,74.2,Central,87.6,Others,77.25,Yes,75.2,66.06,Placed
+M,63,Others,67,Others,64,No,75,66.46,Placed
+F,67.16,Central,72.5,Central,63.35,No,53.04,65.52,Placed
+F,63.3,Central,78.33,Others,74,No,80,74.56,Not Placed
+M,62,Others,62,Others,60,Yes,63,52.38,Placed
+M,67.9,Others,62,Others,67,Yes,58.1,75.71,Not Placed
+F,48,Central,51,Central,58,Yes,60,58.79,Not Placed
+M,59.96,Others,42.16,Others,61.26,No,54.48,65.48,Not Placed
+F,63.4,Others,67.2,Others,60,No,58.06,69.28,Not Placed
+M,80,Others,80,Others,72,Yes,63.79,66.04,Placed
+M,73,Others,58,Others,56,No,84,52.64,Placed
+F,52,Others,52,Others,55,No,67,59.32,Not Placed
+M,73.24,Others,50.83,Others,64.27,Yes,64,66.23,Placed
+M,63,Others,62,Others,65,No,87.5,60.69,Not Placed
+F,59,Central,60,Others,56,No,55,57.9,Placed
+F,73,Central,97,Others,79,Yes,89,70.81,Placed
+M,68,Others,56,Others,68,No,73,68.07,Placed
+F,77.8,Central,64,Central,64.2,No,75.5,72.14,Not Placed
+M,65,Central,71.5,Others,62.8,Yes,57,56.6,Placed
+M,62,Central,60.33,Others,64.21,No,63,60.02,Not Placed
+M,52,Others,65,Others,57,Yes,75,59.81,Not Placed
+M,65,Central,77,Central,69,No,60,61.82,Placed
+F,56.28,Others,62.83,Others,59.79,No,60,57.29,Not Placed
+F,88,Central,72,Central,78,No,82,71.43,Placed
+F,52,Central,64,Central,61,No,55,62.93,Not Placed
+M,78.5,Central,65.5,Central,67,Yes,95,64.86,Placed
+M,61.8,Others,47,Others,54.38,No,57,56.13,Not Placed
+F,54,Central,77.6,Others,69.2,No,95.65,66.94,Not Placed
+F,64,Others,70.2,Central,61,No,50,62.5,Not Placed
+M,67,Others,61,Central,72,No,72,61.01,Placed
+M,65.2,Central,61.4,Central,64.8,Yes,93.4,57.34,Placed
+F,60,Central,63,Central,56,Yes,80,56.63,Placed
+M,52,Others,55,Others,56.3,No,59,64.74,Not Placed
+M,66,Central,76,Central,72,Yes,84,58.95,Placed
+M,72,Others,63,Others,77.5,Yes,78,54.48,Placed
+F,83.96,Others,53,Others,91,No,59.32,69.71,Placed
+F,67,Central,70,Central,65,No,88,71.96,Not Placed
+M,69,Others,65,Others,57,No,73,55.8,Placed
+M,69,Others,60,Others,65,No,87.55,52.81,Placed
+M,54.2,Central,63,Others,58,No,79,58.44,Not Placed
+M,70,Central,63,Central,66,No,61.28,60.11,Placed
+M,55.68,Others,61.33,Others,56.87,No,66,58.3,Placed
+F,74,Others,73,Others,73,Yes,80,67.69,Placed
+M,61,Others,62,Others,65,No,62,56.81,Placed
+M,41,Central,42,Central,60,No,97,53.39,Not Placed
+M,83.33,Central,78,Others,61,Yes,88.56,71.55,Placed
+F,43,Central,60,Others,65,No,92.66,62.92,Not Placed
+M,62,Central,72,Central,65,No,67,56.49,Placed
+M,80.6,Others,82,Others,77.6,No,91,74.49,Placed
+M,58,Others,60,Others,72,No,74,53.62,Placed
+M,67,Others,67,Others,73,Yes,59,69.72,Placed
+F,74,Others,66,Others,58,No,70,60.23,Placed
+M,62,Central,58,Others,53,No,89,60.22,Not Placed
