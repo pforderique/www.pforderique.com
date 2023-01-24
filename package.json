@@ -2,7 +2,7 @@
   "name": "pforderique",
   "version": "1.0.0",
   "description": "",
-  "main": "server/server.js",
+  "main": "api/index.js",
   "scripts": {
     "hotloader": "webpack serve --config ./webpack.config.js --mode development --port 5000",
     "start": "nodemon --ignore client/",
