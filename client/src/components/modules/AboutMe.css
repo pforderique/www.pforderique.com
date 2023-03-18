@@ -49,7 +49,20 @@
 
 .AboutMe-image {
   width: 23%;
+  height: fit-content;
   border-radius: var(--m);
+  position: relative;
+}
+.AboutMe-image::after {
+  content: "";
+  height: calc(95%);
+  width: calc(95%);
+  border: 4px solid var(--primary-highlight);
+  border-radius: var(--m);
+  position: absolute;
+  z-index: -1;
+  right: -8%;
+  bottom: -8%;
 }
 
 @media (max-width: 1400px) {

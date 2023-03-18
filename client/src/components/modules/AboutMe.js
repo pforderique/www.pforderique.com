@@ -51,7 +51,9 @@ const AboutMe = (props) => {
             </a>
           </div>
         </section>
-        <img className="AboutMe-image" src={portrait} />
+        <section className="AboutMe-image">
+          <img src={portrait} />
+        </section>
       </section>
     </div>
   );
