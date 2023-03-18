@@ -1,13 +1,14 @@
 import React from "react";
 
+import resume from "../../public/docs/resume.pdf";
 import Loading from "../modules/Loading";
 import "./ResumePage.css";
 import "../../utilities.css";
 
 const ResumePage = (props) => {
-  if (!props.driveid) return <Loading />;
-
-  const link = `https://drive.google.com/file/d/${props.driveid}/preview`;
+  // Replaced link in src to resume stored locally
+  // if (!props.driveid) return <Loading />;
+  // const link = `https://drive.google.com/file/d/${props.driveid}/preview`;
 
   return (
     <>
@@ -16,7 +17,7 @@ const ResumePage = (props) => {
         <a className="ResumePage-frame u-fadeDown">
           <iframe
             className="ResumePage-frame"
-            src={link}
+            src={resume}
             allow="autoplay"
           ></iframe>
         </a>
