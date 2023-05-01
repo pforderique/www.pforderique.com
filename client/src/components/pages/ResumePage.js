@@ -1,7 +1,6 @@
 import React from "react";
 
 import resume from "../../public/docs/resume.pdf";
-import Loading from "../modules/Loading";
 import "./ResumePage.css";
 import "../../utilities.css";
 

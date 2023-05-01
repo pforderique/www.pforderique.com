@@ -39,9 +39,6 @@ const App = () => {
         <Projects path="/projects/:searchtext" />
         <Projects path="/projects/" searchtext={""} />
         <SingleProject path="/project/:projectid" />
-        {/* {profileinfo && (
-          <ResumePage path="/resume" driveid={profileinfo.resumedriveid} />
-        )} */}
         <ResumePage path="/resume" />
         <Secret path="/secret" />
         <NotFound default />

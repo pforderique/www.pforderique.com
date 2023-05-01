@@ -1,10 +1,8 @@
 import React from "react";
 
-import ProjectModule from "./ProjectModule";
+import ProjectModule from "./ProjectCard";
 import "./ProjectGrid.css";
 import "../../utilities.css";
-
-// import pathfinder from "../../public/projectimages/pathfinder.jpg"
 
 /**
  * The Project Grid to display project modules
