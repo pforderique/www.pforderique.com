@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 
 import Experience from "./Experience";
-import borinquenfoods from "../../public/companyimages/borinquenfoods.png";
-import mathnasium from "../../public/companyimages/mathnasium.png";
-import microsoft from "../../public/companyimages/microsoft.png";
-import mitos from "../../public/companyimages/mitos.png";
-import nvidia from "../../public/companyimages/nvidia.png";
-import google from "../../public/companyimages/google.png";
+import borinquenfoods from "../../public/images/companyimages/borinquenfoods.png";
+import mathnasium from "../../public/images/companyimages/mathnasium.png";
+import microsoft from "../../public/images/companyimages/microsoft.png";
+import mitos from "../../public/images/companyimages/mitos.png";
+import nvidia from "../../public/images/companyimages/nvidia.png";
+import google from "../../public/images/companyimages/google.png";
 
 import { get } from "../../utilities.js";
 import "./ExperienceSection.css";

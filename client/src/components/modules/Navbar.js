@@ -1,7 +1,7 @@
 import { Link, navigate } from "@reach/router";
 import React from "react";
 
-import logo from "../../public/logo.png";
+import logo from "../../public/images/logo.png";
 import SearchBar from "./SearchBar";
 import "./NavBar.css";
 import "../../utilities.css";

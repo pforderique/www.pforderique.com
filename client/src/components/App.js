@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Router, navigate } from "@reach/router";
 
+import Blogs from "./pages/Blogs";
 import Home from "./pages/Home";
 import NavBar from "./modules/Navbar.js";
 import NotFound from "./pages/NotFound";
@@ -40,6 +41,7 @@ const App = () => {
         <Projects path="/projects/" searchtext={""} />
         <SingleProject path="/project/:projectid" />
         <ResumePage path="/resume" />
+        <Blogs path="/blogs" />
         <Secret path="/secret" />
         <NotFound default />
       </Router>

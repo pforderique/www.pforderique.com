@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import portrait from "../../public/me.jpg";
+import portrait from "../../public/images/me.jpg";
 import { get } from "../../utilities.js";
 import "./AboutMe.css";
 import "../../utilities.css";
