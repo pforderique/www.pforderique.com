@@ -77,6 +77,10 @@ form {
   margin: var(--m) 10vw;
 }
 
+.u-gray {
+  color: var(--grey);
+}
+
 .u-highlight {
   color: var(--primary-highlight);
 }
@@ -140,6 +144,10 @@ form {
 
 .u-textCenter {
   text-align: center;
+}
+
+.u-textLeft {
+  text-align: left;
 }
 
 .u-fadeDown,

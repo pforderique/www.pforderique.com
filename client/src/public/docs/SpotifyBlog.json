@@ -1,0 +1,107 @@
+{
+  "title": "Spotify Case Study: Concept Misconception",
+  "intro": "Spotify boasts almost 500 million daily listeners on its platform. Tailoring to such a wide audience emphasizes the need to have a clear design and a concise focus on what makes the platform unique. After conducting several interviews and scourging online threads discussing its design, here are some of the most repeated frustrations and desires that users have with the application along with some potential fixes for a few of them.",
+  "terminology": [
+    "The current Spotify design includes a queue concept for managing which songs play in which order. However, upon further inspection, notice that there are really 2 queues that make up this structure. The manual queue (Mqueue) stores songs that the user manually adds to the queue, while the playlist-inferred queue (Pqueue) shows the next songs that will play based on the current playlist that is playing - only after all the songs from the Mqueue.",
+    "All interview users will be referred to as 'Simon'",
+    "This blog performs some critiques on existing “concepts” as well as introduces some new ones. Concepts are understood as the fundamental building blocks of any software application; to learn more about their structure and relationships, check out The Essence of Software by Daniel Jackson."
+  ],
+  "user_complaints": {
+    "title": "User Complaints",
+    "content": [
+      {
+        "title": "Accidental Playlist Queue Replacement",
+        "problem": "Regarding the play queue, Simon finds it really annoying when he's listening to an album/playlist and wants to add another song in the middle, and by accident rather than adding to the queue, he plays the song, and the playlist queue is then replaced and his place in the original album/playlist is lost.",
+        "scenario": "I am currently listening to a really good “focus” playlist while studying, but then decide to take a break. So I queue up a couple of upbeat songs from an upbeat playlist to listen to while I relax on my phone. However, instead of clicking the three dots *** on the side of the song, I accidentally click on the song itself, and now I’ve lost my place on the focus playlist because the playlist queue has been replaced completely by the upbeat playlist… now I have to dig through the study playlist to find my place where I left off 🙁",
+        "img": "AccidentalPlaylistQueueReplacement",
+        "solution": "Solved with Music Wheel Concept - as you scroll, this song will become the “top” song on the music wheel, so clicking it does nothing now. When you hit the big green playlist button, the top song on the wheel will play."
+      },
+      {
+        "title": "No way to tell the mood of a song",
+        "problem": "Some albums/playlists have songs with varying “moods” associated with them. Simon wishes he could know the “mood” of a song so it doesn’t catch him off guard.",
+        "scenario": "Simon is listening to a playlist of “calm” songs, but then out of nowhere one of the songs was very upbeat. It would’ve been nice to be able to catch this before it came up.",
+        "img": "Nowaytotellthemoodofasong",
+        "solution": "Label concept - given predetermined mood labels, users can set the mood label of a song based on their own opinions -- however, Spotify can recommend which labels to put on songs based on previous user classifications or how others labeled it."
+      },
+      {
+          "title": "More ways to filter songs: by mood/Category",
+          "problem": "Simon has multiple lists of, for example, upbeat songs. He wants to play them as separate playlists. But often he wants to search through all his upbeat songs. His only option is to create yet another playlist of all upbeat songs that aggregate across the other playlists, but that's tedious and even that would not allow you to search for *playlists* that contain upbeat songs.",
+          "solution": "Introduce the Label concept and add options for filtering all songs across all playlists by these labels"
+        },
+        {
+            "title": "[Desktop] Click-and-Drag Multiselect Songs",
+            "problem": "On the desktop version, multi-select is possible (by holding shift), but can be annoying to remove lots of songs at once because click-and-drag selection is not possible",
+            "img": "ClickandDragMultiselectSongs",
+            "solution": "Very easy to implement."
+        },
+        {
+          "title": "Recommend Songs are not new",
+          "problem": "Simon says he wishes that Spotify wouldn’t recommend songs that he already has on his playlists… makes him feel like he’s in a bubble.",
+          "img": "RecommendSongsarenotnew",
+          "solution": "Keep track of what songs the user has in playlists… could be solved using the folder hierarchy system"
+        },
+        {
+            "title": "Album Covers can’t be zoomed into",
+            "problem": "Simon says, 'Why can’t I zoom in? So many other services let me do that…'",
+            "solution": "Just allow it…"
+        },
+        {
+          "title": "Unsubscribe Button is difficult to find",
+          "problem": "Simon complains 'I wish there were a button that was easy to find if you want to unsubscribe from their services. Instead, you have to search for it in the settings just to find out that you have to do it through a desktop device'",
+          "img": "UnsubscribeButtonisdifficulttofind",
+          "solution": "Make it clear how to unsubscribe from their services"
+        },
+        {
+          "title": "Recommend Different Playlists depending on geolocation",
+          "problem": "Simon doesn’t want to listen to the same playlist while he’s in the car as the one he wants when he’s at work - so why does Spotify recommend the same one?",
+          "solution": "Enabling a geolocation feature to find patterns in listening"
+        },
+        {
+          "title": "Allow Deletion of songs from recently played",
+          "problem": "Simon does not understand why this is not possible.",
+          "solution": "Just allow it…"
+        },
+        {
+          "title": "Dislike button",
+          "problem": "'I wish I had a dislike button to let Spotify know to show me fewer songs like these' - Simon",
+          "img": "DislikeButton",
+          "solution": "Include a more clear way for users to inform their dislike of a song/album"
+        },
+        {
+            "title": "A Less Crowded App",
+            "problem": "'I wish the app was less crowded… more simple…' x10 - said by Simon, and tons of people online",
+            "solution": "Focus on the problem that Spotify was meant to solve, and solve it well. More features does not always equal a better product."
+        }
+    ]
+  },
+  "user_confusions": {
+    "title": "User Confusions",
+    "content": [
+      {
+        "title": "What does Shuffle belong to? Playlist? User?",
+        "confusion": "The mobile app shows shuffle as part of the playlist, but the desktop app shows it belonging to the user - at the bottom with the main play button. Adding playlists to queues or albums ignores whether shuffle is on/off - only when you play it does the playlist queue show the order of songs shuffled…",
+        "solution": "Make this more clear. For flexibility, give it to the playlist - sometimes I like the order of a playlist (for maybe new playlists), and sometimes I want it mixed up each time (for maybe old playlists)"
+      },
+      {
+        "title": "Why can I drag a song from the manual queue to the playlist queue?",
+        "confusion": "You are able to drag songs from your manual queue to your playlist queue, and the playlist queue section will still read “Next up from *playlist name*:” even though the song you just added to the playlist queue might not actually be included in the playlist.",
+        "solution": "Make this more clear. For flexibility, give it to the playlist - sometimes I like the order of a playlist (for maybe new playlists), and sometimes I want it mixed up each time (for maybe old playlists)"
+      },
+      {
+        "title": "What happens when I reach the end of a playlist?",
+        "confusion": "Does the recommended play? Does it replay?",
+        "solution": "Music Wheel to show when songs will repeat, and when they won’t"
+      },
+      {
+        "title": "Lack of Order in Browse/Search",
+        "confusion": "“Browse All” contains everything else with no clear sorting methodology. Some of the categories are actual musical genres. Some of the categories are moods or environments (At Home, Workout, or Chill)”... what are these? Folders then?",
+        "solution": "Make them folder concepts"
+      },
+      {
+        "title": "What do all the loops do?",
+        "confusion": "You are able to select different “loops” which is confusing. What is no loop? Loop? Loop once? When do recommended songs appear?",
+        "solution": "Reduce to 2 actions. Loop or no loop and keep consistent."
+      }
+    ]
+  }
+}

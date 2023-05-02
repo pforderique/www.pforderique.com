@@ -1,5 +1,14 @@
 import React from "react";
 
+import BlogData from "../../public/docs/SpotifyBlog.json";
+import AccidentalPlaylistQueueReplacement from "../../public/images/blogs/AccidentalPlaylistQueueReplacement.jpg";
+import Nowaytotellthemoodofasong from "../../public/images/blogs/AccidentalPlaylistQueueReplacement.jpg";
+import ClickandDragMultiselectSongs from "../../public/images/blogs/ClickandDragMultiselectSongs.jpg";
+import RecommendSongsarenotnew from "../../public/images/blogs/RecommendSongsarenotnew.jpg";
+import UnsubscribeButtonisdifficulttofind from "../../public/images/blogs/UnsubscribeButtonisdifficulttofind.jpg";
+import DislikeButton from "../../public/images/blogs/DislikeButton.jpg";
+
+import "./SpotifyBlog.css";
 import "../../utilities.css";
 
 /**
@@ -9,40 +18,118 @@ class SpotifyBlog extends React.Component {
   constructor(props) {
     super(props);
 
-    // TODO: Retreive this locally or from database.
-    const blog = {
-      title: "Spotify Case Study: Concept Misconception",
-      intro:
-        "Spotify boasts almost 500 million daily listeners on its platform. Tailoring to such a wide audience emphasizes the need to have a clear design and a concise focus on what makes the platform unique. After conducting several interviews and scourging online threads discussing its design, here are some of the most repeated frustrations and desires that users have with the application along with some potential fixes for a few of them.",
-      terminology: [
-        "The current Spotify design includes a queue concept for managing which songs play in which order. However, upon further inspection, notice that there are really 2 queues that make up this structure. The manual queue (Mqueue) stores songs that the user manually adds to the queue, while the playlist-inferred queue (Pqueue) shows the next songs that will play based on the current playlist that is playing - only after all the songs from the Mqueue.",
-        "All interview users will be referred to as 'Simon'",
-        "This blog performs some critiques on existing “concepts” as well as introduces some new ones. Concepts are understood as the fundamental building blocks of any software application; to learn more about their structure and relationships, check out The Essence of Software by Daniel Jackson.",
-      ],
-      sections: {
-        user_complaints: {
-          title: "User Complaints",
-          content: [
-            {
-              title: "Accidental Playlist Queue Replacement",
-              problem: "Regarding the play queue, Simon finds it really annoying when he’s listening to an album/playlist and wants to add another song in the middle, and by accident rather than adding to the queue, he plays the song, and the playlist queue is then replaced and his place in the original album/playlist is lost.",
-              scenario: "I am currently listening to a really good “focus” playlist while studying, but then decide to take a break. So I queue up a couple of upbeat songs from an upbeat playlist to listen to while I relax on my phone. However, instead of clicking the three dots *** on the side of the song, I accidentally click on the song itself, and now I’ve lost my place on the focus playlist because the playlist queue has been replaced completely by the upbeat playlist… now I have to dig through the study playlist to find my place where I left off 🙁",
-              img: "",
-              solution: "Solved with Music Wheel Concept - as you scroll, this song will become the “top” song on the music wheel, so clicking it does nothing now. When you hit the big green playlist button, the top song on the wheel will play."
-            },
-          ],
-        },
-      },
-    };
+    this.state = { blog: BlogData };
+  }
 
-    this.state = { blog: blog };
+  // TODO: Load these directly in img element. Configure Webpack correctly.
+  getImage(imgName) {
+    switch (imgName) {
+      case "AccidentalPlaylistQueueReplacement":
+        return AccidentalPlaylistQueueReplacement;
+      case "Nowaytotellthemoodofasong":
+        return Nowaytotellthemoodofasong;
+      case "ClickandDragMultiselectSongs":
+        return ClickandDragMultiselectSongs;
+      case "RecommendSongsarenotnew":
+        return RecommendSongsarenotnew;
+      case "UnsubscribeButtonisdifficulttofind":
+        return UnsubscribeButtonisdifficulttofind;
+      case "DislikeButton":
+        return DislikeButton;
+      default:
+        return null;
+    }
   }
 
   render() {
+    const data = this.state.blog;
+
     return (
-      <div className="u-textCenter">
-        <h2>{this.state.blog.title}</h2>
-      </div>
+      <article className="SpotifyBlog-container">
+        <h2>{data.title}</h2>
+
+        <p className="u-textLeft"></p>
+        <p>{data.intro}</p>
+
+        <section>
+          <h3 className="u-textLeft">Terminology</h3>
+          <p>{data.terminology}</p>
+        </section>
+
+        {/* User Complaints */}
+        <section>
+          <h3 className="u-textLeft">{data.user_complaints.title}</h3>
+          {data.user_complaints.content.map((complaint, idx) => (
+            <article
+              key={`key_${idx}`}
+              className="SpotifyBlog-UserComplaint u-textLeft"
+            >
+              <hr />
+              <h4 className="u-gray">{complaint.title}</h4>
+
+              <section>
+                <p>
+                  <span className="u-highlight">Problem: </span>
+                  {complaint.problem}
+                </p>
+                {complaint.scenario && (
+                  <p>
+                    <span className="u-highlight">Scenario: </span>{" "}
+                    {complaint.scenario}
+                  </p>
+                )}
+                {complaint.img && (
+                  <img
+                    className="SpotifyBlog-img"
+                    src={this.getImage(complaint.img)}
+                  />
+                )}
+                <p>
+                  <span className="u-highlight">Potential Solution: </span>
+                  {complaint.solution}
+                </p>
+              </section>
+            </article>
+          ))}
+        </section>
+
+        {/* User Confusions */}
+        <section>
+          <h3 className="u-textLeft">{data.user_confusions.title}</h3>
+          {data.user_confusions.content.map((confusion, idx) => (
+            <article
+              key={`key_${idx}`}
+              className="SpotifyBlog-UserComplaint u-textLeft"
+            >
+              <hr />
+              <h4 className="u-gray">{confusion.title}</h4>
+
+              <section>
+                <p>
+                  <span className="u-highlight">Confusion: </span>
+                  {confusion.confusion}
+                </p>
+                {confusion.scenario && (
+                  <p>
+                    <span className="u-highlight">Scenario: </span>{" "}
+                    {confusion.scenario}
+                  </p>
+                )}
+                {confusion.img && (
+                  <img
+                    className="SpotifyBlog-img"
+                    src={this.getImage(confusion.img)}
+                  />
+                )}
+                <p>
+                  <span className="u-highlight">Potential Solution: </span>
+                  {confusion.solution}
+                </p>
+              </section>
+            </article>
+          ))}
+        </section>
+      </article>
     );
   }
 }

@@ -1,0 +1,55 @@
+.SpotifyBlog-container {
+  /* display: flex; */
+  /* flex-direction: column; */
+  margin: var(--l) var(--xxl);
+}
+
+.SpotifyBlog-container > * {
+  margin-bottom: var(--xl);
+}
+
+.SpotifyBlog-img {
+  width: 70%;
+  display: block;
+  border-radius: var(--xl);
+  margin: var(--l) auto;
+}
+
+.SpotifyBlog-UserComplaint {
+  margin-top: var(--xl);
+}
+
+.SpotifyBlog-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 7vw;
+}
+
+.SpotifyBlog-line {
+  min-width: 25vw;
+  justify-self: start;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.SpotifyBlog-section > section {
+  margin-bottom: 4vh;
+}
+
+@media (max-width: 1400px) {
+  .SpotifyBlog-section {
+    justify-content: start;
+    margin: 0 7vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .SpotifyBlog-section {
+    margin: 0 0;
+  }
+  .SpotifyBlog-line {
+    min-width: 18vw;
+  }
+}
