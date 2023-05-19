@@ -84,6 +84,31 @@ class SpotifyBlog extends React.Component {
                     src={this.getImage(complaint.img)}
                   />
                 )}
+                {complaint.concept && (
+                  <section className="concept">
+                    <h5>Concept</h5>
+                    <h6>Name: {complaint.concept.name}</h6>
+                    <p>Purpose: {complaint.concept.purpose}</p>
+                    <p>State: {complaint.concept.state}</p>
+                    <div>
+                      Actions:
+                      <ul>
+                        {complaint.concept.actions.map((action, idx) => (
+                          <li key={`key_${idx}`}>{action}</li>
+                        ))}
+                      </ul>
+                    </div>
+                    <p>
+                      Operational Principle:{" "}
+                      {complaint.concept.operationalPrinciple}
+                    </p>
+
+                    <p>
+                      <span className="u-highlight">Concept Problem: </span>
+                      {complaint.concept.conceptProblem}
+                    </p>
+                  </section>
+                )}
                 <p>
                   <span className="u-highlight">Potential Solution: </span>
                   {complaint.solution}
@@ -120,6 +145,31 @@ class SpotifyBlog extends React.Component {
                     className="SpotifyBlog-img"
                     src={this.getImage(confusion.img)}
                   />
+                )}
+                {confusion.concept && (
+                  <section className="concept">
+                    <h5>Concept</h5>
+                    <h6>Name: {confusion.concept.name}</h6>
+                    <p>Purpose: {confusion.concept.purpose}</p>
+                    <p>State: {confusion.concept.state}</p>
+                    <div>
+                      Actions:
+                      <ul>
+                        {confusion.concept.actions.map((action, idx) => (
+                          <li style={{whiteSpace: "pre-wrap"}} key={`key_${idx}`}>{action}</li>
+                        ))}
+                      </ul>
+                    </div>
+                    <p>
+                      Operational Principle:{" "}
+                      {confusion.concept.operationalPrinciple}
+                    </p>
+
+                    <p>
+                      <span className="u-highlight">Concept Problem: </span>
+                      {confusion.concept.conceptProblem}
+                    </p>
+                  </section>
                 )}
                 <p>
                   <span className="u-highlight">Potential Solution: </span>

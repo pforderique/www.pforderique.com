@@ -1,6 +1,6 @@
 {
   "title": "Spotify Case Study: Concept Misconception",
-  "intro": "Spotify boasts almost 500 million daily listeners on its platform. Tailoring to such a wide audience emphasizes the need to have a clear design and a concise focus on what makes the platform unique. After conducting several interviews and scourging online threads discussing its design, here are some of the most repeated frustrations and desires that users have with the application along with some potential fixes for a few of them.",
+  "intro": "Spotify boasts almost 500 million daily listeners on its platform. Tailoring to such a wide audience emphasizes the need to have a clear design and a concise focus on what makes the platform unique. After conducting several interviews and scouring online threads discussing its design, here are some of the most repeated frustrations and desires that users have with the application along with some potential fixes for a few of them.",
   "terminology": [
     "The current Spotify design includes a queue concept for managing which songs play in which order. However, upon further inspection, notice that there are really 2 queues that make up this structure. The manual queue (Mqueue) stores songs that the user manually adds to the queue, while the playlist-inferred queue (Pqueue) shows the next songs that will play based on the current playlist that is playing - only after all the songs from the Mqueue.",
     "All interview users will be referred to as 'Simon'",
@@ -38,7 +38,17 @@
           "title": "Recommend Songs are not new",
           "problem": "Simon says he wishes that Spotify wouldn’t recommend songs that he already has on his playlists… makes him feel like he’s in a bubble.",
           "img": "RecommendSongsarenotnew",
-          "solution": "Keep track of what songs the user has in playlists… could be solved using the folder hierarchy system"
+          "solution": "Keep track of what songs the user has in playlists… could be solved using the folder hierarchy system",
+          "concept": {
+            "name": "Reccomended [StreamingItem]",
+            "purpose": "to extend a short playlist (user-view) / to promote ads (business-view)",
+            "state": "collection: sequence StreamingItem",
+            "actions": [
+              "refresh() -> remove and add different StreamingItems to the collection"
+            ],
+            "operationalPrinciple": "after playlist runs out of StreamingItems, the next StreamingItems that play all come from recommended collection",    
+            "conceptProblem": "refresh() does not consider what songs the user already has in playlists"
+          }
         },
         {
             "title": "Album Covers can’t be zoomed into",
@@ -85,12 +95,39 @@
       {
         "title": "Why can I drag a song from the manual queue to the playlist queue?",
         "confusion": "You are able to drag songs from your manual queue to your playlist queue, and the playlist queue section will still read “Next up from *playlist name*:” even though the song you just added to the playlist queue might not actually be included in the playlist.",
-        "solution": "Make this more clear. For flexibility, give it to the playlist - sometimes I like the order of a playlist (for maybe new playlists), and sometimes I want it mixed up each time (for maybe old playlists)"
+        "solution": "Make this more clear. For flexibility, give it to the playlist - sometimes I like the order of a playlist (for maybe new playlists), and sometimes I want it mixed up each time (for maybe old playlists)",
+        "concept": {
+          "name": "queue [StreamingItem, Playlist, Folder]",
+          "purpose": "to manually change the order that StreamingItems play",
+          "state": "manualQ: sequence StreamingItem\nplaylistQ: sequence StreamingItem",
+          "actions": [
+            "insert (s: StreamingItem, idx: Number, queue)\n\tadd s to index idx in the collection, queue",
+            "add (s: StreamingItem)\n\tadd s to the back of manualQ",
+            "add (p: Playlist)\n\tadd (s) for every s in p.collection",
+            "add (f: Folder)\n\tadd (p) for every p in f.playlists"
+          ],
+          "operationalPrinciple": "insert (s, idx=0) to have s play next after the current playing song\n add (p) to play an entire playlist next after the current playing song",    
+          "conceptProblem": "insert action doesnt take into account whether the song comes from manual or playlist queue"
+        }
       },
       {
         "title": "What happens when I reach the end of a playlist?",
         "confusion": "Does the recommended play? Does it replay?",
-        "solution": "Music Wheel to show when songs will repeat, and when they won’t"
+        "solution": "Music Wheel to show when songs will repeat, and when they won’t",
+        "concept": {
+          "name": "playlist [StreamingItem]",
+          "purpose": "to allow automatic, continuous streaming / to group by similarity / more?",
+          "state": "playing: StreamingItem\ncollection: sequence StreamingItem",
+          "actions": [
+            "create ()\n\t create empty collection\n\tset playing to null",
+            "add (s: StreamingItem)\n\twhen x not in queued or not equal to playing (no precondition in Spotify, actually)\n\tadd s to collection",
+            "remove (s: StreamingItem)\n\twhen s in collection\n\tremove s collection",   
+            "play (s: StreamingItem)\n\twhen s in collection\n\tset playing equal to s\n\tonce done, play next s if available",
+            "delete ()\n\tremove every StreamingItem from collection"
+          ],
+          "operationalPrinciple": "after play(s) once, every StreamingItem in collection will play(s’) automatically",    
+          "conceptProblem": "Playlist does not include a state/actions for shuffling"
+        }
       },
       {
         "title": "Lack of Order in Browse/Search",
