@@ -15,16 +15,19 @@ const SkillsSection = () => {
   const [skills, setSkills] = useState(undefined);
   useEffect(() => {
     get("/api/skills").then((s) => {
+      console.log("Fetched skills:", s);
       setSkills(s);
     });
   }, []);
 
+  if (skills == undefined) return <div></div>;
   if (!skills) return <div>Loading skills...</div>;
 
   const sections = [
-    ["Programming Languages", "programming language"],
-    ["Technologies", "technology"],
-    ["Certificates", "certificate"],
+    ["Programming Languages", "programming"],
+    ["ML/AI", "ML/AI"],
+    ["Infrastructure", "infrastructure"],
+    ["Certificates", "certificates"],
   ];
 
   return (
