@@ -1,0 +1,112 @@
+[
+    {
+        "name": "Python",
+        "type": "programming",
+        "importance": 1
+    },
+    {
+        "name": "C++",
+        "type": "programming",
+        "importance": 1
+    },
+    {
+        "name": "Go",
+        "type": "programming",
+        "importance": 1
+    },
+    {
+        "name": "TypeScript",
+        "type": "programming",
+        "importance": 1
+    },
+    {
+        "name": "SQL",
+        "type": "programming",
+        "importance": 1
+    },
+    {
+        "name": "Java",
+        "type": "programming",
+        "importance": 1
+    },
+    {
+        "name": "Assembly",
+        "type": "programming",
+        "importance": 1
+    },
+    {
+        "name": "Bash",
+        "type": "programming",
+        "importance": 1
+    },
+    {
+        "name": "Google Python Readability Certified",
+        "type": "certificates",
+        "importance": 1
+    },
+    {
+        "name": "PyTorch",
+        "type": "ML/AI",
+        "importance": 1
+    },
+    {
+        "name": "TensorFlow",
+        "type": "ML/AI",
+        "importance": 1
+    },
+    {
+        "name": "NeMo",
+        "type": "ML/AI",
+        "importance": 1
+    },
+    {
+        "name": "LangChain",
+        "type": "ML/AI",
+        "importance": 1
+    },
+    {
+        "name": "Kubernetes (GKE)",
+        "type": "infrastructure",
+        "importance": 1
+    },
+    {
+        "name": "Slurm",
+        "type": "infrastructure",
+        "importance": 1
+    },
+    {
+        "name": "Docker",
+        "type": "infrastructure",
+        "importance": 1
+    },
+    {
+        "name": "Terraform",
+        "type": "infrastructure",
+        "importance": 1
+    },
+    {
+        "name": "Google Cloud",
+        "type": "infrastructure",
+        "importance": 1
+    },
+    {
+        "name": "Azure",
+        "type": "infrastructure",
+        "importance": 1
+    },
+    {
+        "name": "CI/CD",
+        "type": "infrastructure",
+        "importance": 1
+    },
+    {
+        "name": "Redis",
+        "type": "infrastructure",
+        "importance": 1
+    },
+    {
+        "name": "Argo Workflows",
+        "type": "infrastructure",
+        "importance": 1
+    }
+]

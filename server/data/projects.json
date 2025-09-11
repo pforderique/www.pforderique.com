@@ -1,0 +1,13 @@
+[
+    {
+        "title": "Smart Rockets",
+        "date": "2022",
+        "views": 10,
+        "driveid": "1dN4j8OQ538FPshma_xmHt-oOKrmA6bOg",
+        "shortDes": "Reinforcement learning project using genetic algorithms to evolve rocket path-finding.",
+        "longDes": "Reinforcement learning project using genetic algorithms to evolve rocket path-finding.",
+        "playable": true,
+        "link": "https://editor.p5js.org/pforderique/full/lyDKQQxlh",
+        "github": "https://github.com/pforderique/SmartRockets"
+    }
+]
