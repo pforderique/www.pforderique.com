@@ -16,7 +16,7 @@ const SingleProject = (props) => {
 
   useEffect(() => {
     get("/api/project", { projectid: props.projectid }).then((p) => {
-      if (!p._id) setProject(null);
+      if (!p.id) setProject(null);
       else setProject(p);
     });
   }, []);
@@ -25,7 +25,7 @@ const SingleProject = (props) => {
   if (project === null)
     return <div className="u-textCenter">No project found.</div>;
 
-  const link = `https://drive.google.com/uc?export=view&id=${project.driveid}`;
+  const link = `https://drive.google.com/thumbnail?export=view&id=${project.driveid}&sz=w10000`;
 
   return (
     <div className="SingleProject-container u-main-container">
