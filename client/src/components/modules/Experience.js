@@ -21,10 +21,10 @@ const Experience = (props) => {
         </div>
         <div className="Experience-header">
           <h5 className="u-highlight u-bold">
-            {props.exp.jobtitle + " - " + props.exp.company}
+            {props.exp.jobtitle + " @ " + props.exp.company}
           </h5>
-          <div>{props.exp.location}</div>
           <div>{props.exp.date}</div>
+          <div><em>{props.exp.location}</em></div>
         </div>
       </section>
       <section className="Experience-des">

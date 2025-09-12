@@ -14,7 +14,7 @@ const SkillsBlurb = (props) => {
     <section>
       <h5 className="u-highlight u-bold">{props.title}</h5>
       {!props.skills && "Loading..."}
-      <div>{props.skills.map((s) => s.name + " ")}</div>
+      <div>{props.skills.map((s) => s.name).join(", ")}</div>
     </section>
   );
 };

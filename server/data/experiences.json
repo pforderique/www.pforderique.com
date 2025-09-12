@@ -1,0 +1,15 @@
+[
+    {
+    "jobtitle": "Software Engineer",
+    "company": "Google",
+    "location": "Kirkland, WA",
+    "date": "September 2024 - Present",
+    "recency": 1,
+    "description": "Supporting Google's accelerator-optimized machines.",
+    "links": ["https://www.google.com"],
+    "linksDes": ["Google Homepage"],
+    "bullets": [
+      "Maintained hardware and software qualification pipelines."
+    ]
+  }
+]

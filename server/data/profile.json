@@ -1,0 +1,16 @@
+{
+    "name": "Piero Orderique",
+    "header": "Software Engineer @ Google",
+    "bio": "MIT Alum interested in Natural Language Processing (NLP), cloud, ML infra, automation, and finance.",
+    "aboutmes": [
+        "Graduated MIT with a B.S. and MEng in Computer Science and Engineering.",
+        "I've worked a variety of roles in software engineering, from full-stack, ML infrastructure, cloud, and machine learning research.",
+        "I'm a big fan of contributing to open-source projects. Check out my GitHub to view commits to the TensorFlow JS repository and my own fair share of personal projects ranging from personal finance tooling, LLM agents, and simulations.",
+        "Besides programming, I enjoy swimming 🏊, cooking Peruvian food 🇵🇪, and watching early 2000s detective shows 🍍"
+    ],
+    "github": "https://github.com/pforderique",
+    "linkedin": "https://www.linkedin.com/in/pforderique/",
+    "instagram": "https://www.instagram.com/fabrizzioorderique/",
+    "facebook": "https://www.facebook.com/fabrizzioorder/",
+    "email": "pforderique@gmail.com"
+}

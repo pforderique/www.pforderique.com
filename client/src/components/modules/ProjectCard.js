@@ -12,12 +12,12 @@ import "../../utilities.css";
  * @param {string} img of project
  */
 const ProjectModule = (props) => {
-  const link = `https://drive.google.com/uc?export=view&id=${props.project.driveid}`;
+  const link = `https://drive.google.com/thumbnail?export=view&id=${props.project.driveid}&sz=w10000`;
 
   return (
     <div
       className="ProjectModule-container u-fadeDown"
-      onClick={() => navigate(`/project/${props.project._id}`)}
+      onClick={() => navigate(`/project/${props.project.id}`)}
     >
       <h3 className="u-highlight u-textCenter u-bold">{props.project.title}</h3>
       <img src={link}></img>
