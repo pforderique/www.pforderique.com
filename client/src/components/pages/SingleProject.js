@@ -58,6 +58,7 @@ const SingleProject = (props) => {
       </section>
       <div className="SingleProject-img-container">
         {project.playable_link && Number(window.innerWidth) > 1200 ? (
+          // If there's a playable link and on desktop, show the playable link
           <iframe
             className="SingleProject-play"
             src={project.playable_link}
@@ -65,7 +66,16 @@ const SingleProject = (props) => {
             frameBorder="o"
           ></iframe>
         ) : (
-          <img src={fetchImage(project.image)}></img>
+          // Else, show the image
+          <div className="SingleProject-img-wrapper">
+            {project.link ? (
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
+                <img src={fetchImage(project.image)} alt={project.title} />
+              </a>
+            ) : (
+              <img src={fetchImage(project.image)} alt={project.title} />
+            )}
+          </div>
         )}
       </div>
     </div>

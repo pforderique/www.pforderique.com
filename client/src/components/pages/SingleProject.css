@@ -29,6 +29,21 @@
   flex-direction: column;
   justify-content: center;
 }
+.SingleProject-img-wrapper:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--green-tint);
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+.SingleProject-img-wrapper {
+  position: relative;
+}
 
 .SingleProject-icon {
   padding-right: var(--m);
