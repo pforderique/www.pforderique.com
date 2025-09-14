@@ -1,13 +1,28 @@
 [
     {
+        "id": 1,
         "title": "Smart Rockets",
         "date": "2022",
+        "category": "ML/AI | Genetic Algorithms",
         "views": 10,
-        "driveid": "1dN4j8OQ538FPshma_xmHt-oOKrmA6bOg",
         "shortDes": "Reinforcement learning project using genetic algorithms to evolve rocket path-finding.",
         "longDes": "Reinforcement learning project using genetic algorithms to evolve rocket path-finding.",
-        "playable": true,
-        "link": "https://editor.p5js.org/pforderique/full/lyDKQQxlh",
-        "github": "https://github.com/pforderique/SmartRockets"
+        "playable_link": "https://editor.p5js.org/pforderique/full/lyDKQQxlh",
+        "link": "https://p5js.org/examples/simulate-smart-rockets.html",
+        "github": "https://github.com/pforderique/SmartRockets",
+        "image": "projects/smartrockets.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Our Space",
+        "date": "2022",
+        "category": "Full Stack | Web Development",
+        "views": 10,
+        "shortDes": "A collaborative site for crowdsourcing community requests.",
+        "longDes": "🎯OurSpace enables crowdsourced service requests of communal spaces, and thus provides a domain where users can share their opinions and amplify their unspoken ideas- as well as discover new spaces within their community. 🎯OurSpace strives to serve as a tool to collect voices and ideas about the 90% of issues about community spaces that are often missed due to a lack of community platform.",
+        "playable_link": "",
+        "link": "https://ourspace.jasyang.com/",
+        "github": "https://github.com/camtheman256/6.1040-final-project",
+        "image": "projects/ourspace.jpg"
     }
 ]
