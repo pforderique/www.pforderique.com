@@ -6,66 +6,93 @@
 | This file defines the routes for the server.
 |
 */
+const Experiences = require("./data/experiences.json");
+const Profile = require("./data/profile.json");
+const Skills = require("./data/skills.json");
+const Visitors = require("./data/visitors.json");
+const Projects = require("./data/projects.json");
 const express = require("express");
-
-// model imports here
-const Experience = require("./models/experience");
-const Profile = require("./models/profile");
-const Project = require("./models/project");
-const Skill = require("./models/skill");
-const Visitor = require("./models/visitor");
 
 // api endpoints:
 const router = express.Router();
 
 // API methods here
 router.get("/profile", (req, res) => {
-  Profile.findOne({}).then((profile) => res.send(profile));
+  res.send(Profile);
 });
 
 router.get("/project", (req, res) => {
-  Project.findById(req.query.projectid, (err, project) => {
-    if (err) res.send(err);
-    else {
-      project.views += 1;
-      project.save().then((p) => res.send(p));
-    }
-  });
+  // Project.findById(req.query.projectid, (err, project) => {
+  //   if (err) res.send(err);
+  //   else {
+  //     project.views += 1;
+  //     project.save().then((p) => res.send(p));
+  //   }
+  // });
+  console.log(`Looking for project with id ${req.query.projectid}`);
+  const project = Projects.find((p) => p.id === Number(req.query.projectid));
+  if (project) {
+    project.views += 1;
+    res.send(project);
+  } else {
+    res.status(404).send({ msg: "Project not found" });
+  }
 });
 
 router.get("/projects", (req, res) => {
-  if (!req.query.q) req.query.q = "";
-  const query = { title: { $regex: ".*" + req.query.q + ".*", $options: "i" } };
-  Project.find(query)
-    .limit(20)
-    .sort({ views: -1 })
-    .then((results) => res.send(results));
+  let filteredProjects = Projects;
+  if (req.query.q && req.query.q.length > 0) {
+    const q = req.query.q.toLowerCase();
+    filteredProjects = Projects.filter((project) =>
+      project.title.toLowerCase().includes(q) ||
+      (project.description && project.description.toLowerCase().includes(q)) ||
+      (project.technologies &&
+        project.technologies.some((tech) => tech.toLowerCase().includes(q)))
+    );
+  }
+  filteredProjects = filteredProjects.slice(0, 20);
+  filteredProjects.sort((a, b) => b.views - a.views);
+  return res.send(filteredProjects);
 });
 
 router.get("/experiences", (req, res) => {
-  Experience.find({})
-    .sort({ recency: -1 })
-    .then((results) => res.send(results));
+  Experiences.sort((a, b) => new Date(b.recency) - new Date(a.recency));
+  res.send(Experiences);
 });
 
 router.get("/skills", (req, res) => {
-  const query = req.query.type ? { type: req.query.type } : {};
-  Skill.find(query)
-    .sort({ importance: -1 })
-    .then((skills) => res.send(skills));
+  Skills.sort((a, b) => b.importance - a.importance);
+  const query = req.query.type ? req.query.type : null;
+  if (query) {
+    const filteredSkills = Skills.filter((skill) =>
+      skill.type && skill.type.toLowerCase().includes(query.toLowerCase())
+    );
+    return res.send(filteredSkills);
+  }
+  res.send(Skills);
 });
 
 router.get("/visitor", (req, res) => {
-  Visitor.findOne({})
-    .sort({ number: -1 })
-    .then((visitor) => {
-      const newvisitor = new Visitor({
-        number: visitor.number + 1,
-        date: Date.now(),
-      });
-
-      newvisitor.save().then((v) => res.send(v));
-    });
+  const numVisitors = Visitors.length;
+  
+  const newvisitor = {
+    number: numVisitors + 1,
+    date: new Date()
+  };
+  Visitors.push(newvisitor);
+  // TODO: fix.
+  // fs.writeFile(
+  //   "./server/data/visitors.json",
+  //   JSON.stringify(Visitors, null, 2),
+  //   (err) => {
+  //     if (err) {
+  //       console.error("Error writing visitors.json:", err);
+  //       return res.status(500).send({ error: "Failed to save visitor record." });
+  //     }
+  //     res.send(newvisitor);
+  //   }
+  // )
+  res.send(newvisitor);
 });
 
 // anything else falls to this "not found" case
