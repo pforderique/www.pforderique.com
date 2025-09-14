@@ -13,6 +13,7 @@ import "../../utilities.css";
  * @param {object} project to display
  */
 const ProjectModule = (props) => {
+  const [mainCategory, subCategory] = props.project.category.split("|");
 
   return (
     <div
@@ -21,18 +22,18 @@ const ProjectModule = (props) => {
     >
       <h3 className="u-highlight u-textCenter u-bold">{props.project.title}</h3>
       <img src={fetchImage(props.project.image)} alt="project image" />
-      <section className="ProjectModule-details">
+      <em className="ProjectModule-details">
         <div>
           <span className="u-bold">Year: </span>
           {props.project.date}
         </div>
         <div>
-          <em>{props.project.category}</em>
+          <span className="u-bold">{`${mainCategory}: `}</span>
+          {subCategory}
         </div>
-      </section>
+      </em>
       <section className="ProjectModule-des">
-        {props.project.shortDes + " See more "}
-        <a href={props.project.link}>here</a>.
+        {props.project.shortDes}
       </section>
     </div>
   );

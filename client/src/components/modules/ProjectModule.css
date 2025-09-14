@@ -13,6 +13,7 @@
 .ProjectModule-details {
   display: flex;
   justify-content: space-between;
+  margin-top: var(--s);
   margin-bottom: var(--s);
 }
 
