@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import { get } from "../../utilities.js";
+import { get, fetchImage } from "../../utilities.js";
 import Loading from "../modules/Loading";
 import "./SingleProject.css";
 import "../../utilities.css";
@@ -24,8 +24,6 @@ const SingleProject = (props) => {
   if (project === undefined) return <Loading />;
   if (project === null)
     return <div className="u-textCenter">No project found.</div>;
-
-  const link = `https://drive.google.com/thumbnail?export=view&id=${project.driveid}&sz=w10000`;
 
   return (
     <div className="SingleProject-container u-main-container">
@@ -59,15 +57,15 @@ const SingleProject = (props) => {
         </span>
       </section>
       <div className="SingleProject-img-container">
-        {project.playable && Number(window.innerWidth) > 1200 ? (
+        {project.playable_link && Number(window.innerWidth) > 1200 ? (
           <iframe
             className="SingleProject-play"
-            src={project.link}
+            src={project.playable_link}
             scrolling="no"
             frameBorder="o"
           ></iframe>
         ) : (
-          <img src={link}></img>
+          <img src={fetchImage(project.image)}></img>
         )}
       </div>
     </div>
