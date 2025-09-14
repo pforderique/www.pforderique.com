@@ -1,6 +1,8 @@
 import React from "react";
 import { navigate } from "@reach/router";
 
+import { fetchImage } from "../../utilities.js";
+
 import "./ProjectModule.css";
 import "../../utilities.css";
 
@@ -8,11 +10,9 @@ import "../../utilities.css";
  * A display module for a single project
  *
  * Proptypes
- * @param {object} project to dislpay
- * @param {string} img of project
+ * @param {object} project to display
  */
 const ProjectModule = (props) => {
-  const link = `https://drive.google.com/thumbnail?export=view&id=${props.project.driveid}&sz=w10000`;
 
   return (
     <div
@@ -20,15 +20,14 @@ const ProjectModule = (props) => {
       onClick={() => navigate(`/project/${props.project.id}`)}
     >
       <h3 className="u-highlight u-textCenter u-bold">{props.project.title}</h3>
-      <img src={link}></img>
+      <img src={fetchImage(props.project.image)} alt="project image" />
       <section className="ProjectModule-details">
         <div>
-          <span className="u-bold">Date: </span>
+          <span className="u-bold">Year: </span>
           {props.project.date}
         </div>
         <div>
-          <span className="u-bold">Views: </span>
-          {props.project.views}
+          <em>{props.project.category}</em>
         </div>
       </section>
       <section className="ProjectModule-des">

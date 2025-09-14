@@ -52,3 +52,13 @@ export function post(endpoint, params = {}) {
       throw `POST request to ${endpoint} failed with error:\n${error}`;
     });
 }
+
+// Helper code to fetch an image dynamically given its relative path to the public/images directory
+export function fetchImage(relativePath) {
+  try {
+    return require(`./public/images/${relativePath}`).default;
+  } catch (err) {
+    console.error(`Image at path ./public/images/${relativePath} not found!`);
+    return "";
+  }
+}
