@@ -38,12 +38,18 @@ const SingleProject = (props) => {
         </h2>
         <section className="SingleProject-details">
           <h5>
-            <span className="u-bold">Date: </span>
-            {project.date}
+            <span className="u-bold">Year: </span>
+            {project.year}
           </h5>
           <h5>
-            <span className="u-bold">Views: </span>
-            {project.views}
+            {
+              project.category && (
+                <>
+                  <span className="u-bold">{`${project.category.split("|")[0]}: `}</span>
+                  {project.category.split("|")[1]}
+                </>
+              )
+            }
           </h5>
         </section>
         <span>
@@ -66,16 +72,15 @@ const SingleProject = (props) => {
             frameBorder="o"
           ></iframe>
         ) : (
-          // Else, show the image
-          <div className="SingleProject-img-wrapper">
-            {project.link ? (
+          project.link ? (
+            <div className="SingleProject-img-wrapper">
               <a href={project.link} target="_blank" rel="noopener noreferrer">
                 <img src={fetchImage(project.image)} alt={project.title} />
               </a>
-            ) : (
-              <img src={fetchImage(project.image)} alt={project.title} />
-            )}
-          </div>
+            </div>
+          ) : (
+            <img src={fetchImage(project.image)} alt={project.title} />
+          )
         )}
       </div>
     </div>

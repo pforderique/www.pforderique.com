@@ -25,7 +25,7 @@ const ProjectModule = (props) => {
       <em className="ProjectModule-details">
         <div>
           <span className="u-bold">Year: </span>
-          {props.project.date}
+          {props.project.year}
         </div>
         <div>
           <span className="u-bold">{`${mainCategory}: `}</span>
