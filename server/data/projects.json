@@ -13,7 +13,20 @@
         "image": "projects/marketsim.jpg"
     },
     {
-        "id": 2,
+        "id": 5,
+        "title": "Prescriptive LLM Agent for Enterprise Optimization",
+        "year": 2024,
+        "category": "Research|Large Language Model Agents",
+        "views": 10,
+        "shortDes": "A domain adaptable, causal and prescriptive tool-equipped LLM agent for enterprise resource optimization.",
+        "longDes": "Designed an agent leveraging causal and prescriptive reasoning tools with natural follow-ups using LangChain. Trained large language models with parameter-efficient fine-tuning techniques such as prompt tuning and adapters, achieving an 11% improvement in downstream task accuracy. Translated research on hallucination mitigation and intent recognition into production-ready pipelines in Python, generalized for enterprise-scale use cases.",
+        "playable_link": "",
+        "link": "https://arxiv.org/pdf/2407.20447",
+        "github": "",
+        "image": "projects/precaise.jpg"
+    },
+    {
+        "id": 10,
         "title": "Rent Price Predictor CNN",
         "year": 2023,
         "category": "ML/AI|Computer Vision",
@@ -26,7 +39,7 @@
         "image": "projects/rent_prices_cnn.jpg"
     },
     {
-        "id": 3,
+        "id": 15,
         "title": "Smart Rockets",
         "year": 2022,
         "category": "ML/AI|Reinforcement Learning",
@@ -39,7 +52,7 @@
         "image": "projects/smartrockets.jpg"
     },
     {
-        "id": 4,
+        "id": 20,
         "title": "Our Space",
         "year": 2022,
         "category": "Web Development|Full Stack",
@@ -50,5 +63,96 @@
         "link": "https://ourspace.jasyang.com/",
         "github": "https://github.com/camtheman256/6.1040-final-project",
         "image": "projects/ourspace.jpg"
+    },
+    {
+        "id": 25,
+        "title": "AirChat",
+        "year": 2021,
+        "category": "Web Development|Full Stack",
+        "views": 10,
+        "shortDes": "A lightweight chat application.",
+        "longDes": "AirChat is a lightweight chat application that allows users to create and join chat rooms, send messages, and share files in real-time. Built with React for the frontend and Node.js with Socket.io for the backend, AirChat provides a seamless and interactive user experience.",
+        "playable_link": "",
+        "link": "",
+        "github": "",
+        "image": "projects/airchat.jpg"
+    },
+    {
+        "id": 30,
+        "title": "Path Finding Visualizer",
+        "year": 2021,
+        "category": "Algorithms|Visualization",
+        "views": 10,
+        "shortDes": "A visualizer for breadth-first-search pathfinding algorithm.",
+        "longDes": "This project involves creating a visual representation of the breadth-first-search (BFS) algorithm to find the shortest path in a grid. Users can set start and end points, create obstacles, and watch the algorithm explore the grid in real-time. Built using P5js.",
+        "playable_link": "https://editor.p5js.org/pforderique/full/-_WlT5Ynl",
+        "link": "",
+        "github": "",
+        "image": "projects/pathfinding_visualizer.jpg"
+    },
+    {
+        "id": 35,
+        "title": "Flooding Simulation",
+        "year": 2021,
+        "category": "Research|Sustainability",
+        "views": 10,
+        "shortDes": "Flooding model simulations to predict flood scenarios.",
+        "longDes": "This project involves analyzing and flood simulations to asses damage to campus and surrounding urban areas. Using GIS data with ArcGIS and flooding models, we identified $600M+ of potential flood risk damages to university property from the '100 year' simulation. Designed a Python package for reading and visualizing 300+ specialized geodata files (SciPy, matplotlib, NumPy) and engineered data filters and custom compression, reducing geodata storage by 99.99% (1.1TB to 1MB).",
+        "playable_link": "",
+        "link": "",
+        "github": "",
+        "image": "projects/floodingsimulation.jpg"
+    },
+    {
+        "id": 40,
+        "title": "Covid19 Cases Predictor",
+        "year": 2020,
+        "category": "ML/AI|Data Science",
+        "views": 10,
+        "shortDes": "A model to predict Covid19 cases.",
+        "longDes": "This project involves using regression models to predict Covid19 cases using various data sources and machine learning techniques.",
+        "playable_link": "",
+        "link": "",
+        "github": "https://github.com/pforderique/COVID-19-Cases-Predictor",
+        "image": "projects/covid19_predictor.jpg"
+    },
+    {
+        "id": 45,
+        "title": "Android Paint App",
+        "year": 2019,
+        "category": "Mobile Development|Android",
+        "views": 10,
+        "shortDes": "A simple drawing app for Android devices.",
+        "longDes": "This project involves creating a drawing application for Android devices using Java and the Android SDK. Users can draw on the screen, choose colors, and save their artwork.",
+        "playable_link": "",
+        "link": "https://apkpure.com/paint-canvas-free/com.paintcanvasapp.paintcanvas",
+        "github": "https://github.com/pforderique/Paint-Canvas",
+        "image": "projects/android_paint_app.jpg"
+    },
+    {
+        "id": 50,
+        "title": "AI Tic Tac Toe",
+        "year": 2020,
+        "category": "Web Development|Game",
+        "views": 10,
+        "shortDes": "A simple AI-powered Tic Tac Toe game.",
+        "longDes": "This project involves creating a Tic Tac Toe game where players can compete against an 'AI' using the minimax algorithm with alpha-beta pruning.",
+        "playable_link": "https://editor.p5js.org/pforderique/full/n5TQ4mBCM",
+        "link": "",
+        "github": "",
+        "image": "projects/ai_tic_tac_toe.jpg"
+    },
+    {
+        "id": 55,
+        "title": "Planet Defender",
+        "year": 2020,
+        "category": "Web Development|Game",
+        "views": 10,
+        "shortDes": "A game to defend planets from asteroids. Just for fun!",
+        "longDes": "This project involves creating a game where players must defend their planet from incoming asteroids. Extremely simple game made to entertain some kids I was babysitting. Built using P5js.",
+        "playable_link": "https://editor.p5js.org/pforderique/full/n5TQ4mBCM",
+        "link": "",
+        "github": "",
+        "image": "projects/planet_defender.jpg"
     }
 ]
