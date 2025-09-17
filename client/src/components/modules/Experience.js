@@ -1,5 +1,7 @@
 import React from "react";
 
+import { fetchImage } from "../../utilities.js";
+
 import "./Experience.css";
 import "../../utilities.css";
 
@@ -11,13 +13,13 @@ import "../../utilities.css";
  * @param {object} images containing all image links
  */
 const Experience = (props) => {
-  const link = `_${props.exp.company.toLowerCase().replace(/\s+/g, "")}`;
+  const img = fetchImage(props.exp.image);
 
   return (
     <section className="Experience-container">
       <section className="Experience-top">
         <div className="Experience-img-container">
-          <img src={props.imgs[link]}></img>
+          <img src={img}></img>
         </div>
         <div className="Experience-header">
           <h5 className="u-highlight u-bold">
@@ -30,12 +32,15 @@ const Experience = (props) => {
       <section className="Experience-des">
         {props.exp.description}
         {props.exp.links.length !== 0 &&
-          props.exp.linksDes.map((des, idx) => (
-            <span key={`key_${idx}`}>
-              {" " + des + " "}
-              <a href={props.exp.links[idx]}>here</a>.
-            </span>
-          ))}
+          <span>
+            {props.exp.linksDes.map((des, idx) => (
+              <React.Fragment key={`key_${idx}`}>
+                <a href={props.exp.links[idx]}><em>{" " + des + " "}</em></a>
+                {idx < props.exp.linksDes.length - 1 && " | "}
+              </React.Fragment>
+            ))}
+          </span>
+        }
       </section>
       <ul className="Experience-bullets">
         {props.exp.bullets.map((bullet, idx) => (

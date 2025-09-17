@@ -1,15 +1,121 @@
 [
-    {
+  {
     "jobtitle": "Software Engineer",
     "company": "Google",
     "location": "Kirkland, WA",
     "date": "September 2024 - Present",
-    "recency": 1,
-    "description": "Supporting Google's accelerator-optimized machines.",
-    "links": ["https://www.google.com"],
-    "linksDes": ["Google Homepage"],
+    "recency": 7,
+    "description": "GPU Validation Team. Supporting Google's accelerator-optimized machines.",
+    "image": "companylogos/google.png",
+    "links": ["https://cloud.google.com/compute/docs/accelerator-optimized-machines"],
+    "linksDes": ["A* Supercomputers"],
     "bullets": [
-      "Maintained hardware and software qualification pipelines."
-    ]
+      "Designed and implemented an end-to-end automated software qualification pipeline for scalable GPU clusters (H100/H200/GB200), reducing engineering effort per qualification by 86%.",
+      "Maintained the hardware qualification system gating release to all A* supercomputers, qualifying 100k+ GPUs (~$100M+ capacity) for production readiness.",
+      "Operated Kubernetes-based GPU clusters at scale, proactively validating 30+ major software updates to ensure zero customer disruption and no performance regressions.",
+      "Introduced CI/CD pipelines for cloud infrastructure to provision and maintain workflows, buckets, artifacts, permissions, and Cloud Run jobs, services, and functions."
+    ],
+    "skills": ["Python", "Go", "Kubernetes", "CI/CD", "Cloud Run", "Linux", "Git"]
+  },
+  {
+    "jobtitle": "Graduate Researcher",
+    "company": "MIT-IBM Watson AI Lab",
+    "location": "Cambridge, MA",
+    "date": "January 2024 - July 2024",
+    "recency": 6,
+    "description": "Research on LLMs, causal reasoning, and production AI pipelines.",
+    "image": "companylogos/mitibm.png",
+    "links": ["https://mitibmwatsonailab.mit.edu/", "https://arxiv.org/abs/2407.20447"],
+    "linksDes": ["MIT-IBM Watson AI Lab", "Research Paper"],
+    "bullets": [
+      "Designed an agent leveraging causal and prescriptive reasoning tools with natural follow-ups (LangChain).",
+      "Trained LLMs using parameter-efficient fine-tuning techniques (prompt tuning, adapters), achieving an 11% improvement in downstream task accuracy.",
+      "Translated research on hallucination mitigation and intent recognition into production-ready pipelines, generalized for enterprise-scale use cases."
+    ],
+    "skills": ["Python", "LangChain", "LLMs", "Machine Learning", "Research", "Fine-tuning"]
+  },
+  {
+    "jobtitle": "Software Engineering Intern",
+    "company": "Google",
+    "location": "Sunnyvale, CA",
+    "date": "June 2023 - August 2023",
+    "recency": 5,
+    "description": "Developed NLP and LLM features for TensorFlow.js.",
+    "image": "companylogos/google.png",
+    "links": ["https://www.tensorflow.org/js", "https://github.com/tensorflow/tfjs/tree/master/tfjs-layers/src/layers/nlp"],
+    "linksDes": ["TensorFlow.js", "tfjs-layers (GitHub)"],
+    "bullets": [
+      "Added NLP layers (tokenizers, attention, transformer blocks), introducing in-browser LLM support to TFJS.",
+      "Implemented GPT-2, TensorFlow.js's first LLM, by adapting Keras and fundamental research papers.",
+      "Designed new tensor ops with algorithmic optimizations needed for real-time inference performance."
+    ],
+    "skills": ["JavaScript", "TensorFlow.js", "NLP", "Keras", "Machine Learning"]
+  },
+  {
+    "jobtitle": "STEP Intern",
+    "company": "Google",
+    "location": "Cambridge, MA",
+    "date": "May 2022 - August 2022",
+    "recency": 4,
+    "description": "Full-stack development and UX improvements for internal tools.",
+    "image": "companylogos/google.png",
+    "links": ["https://www.google.com/flights"],
+    "linksDes": ["Google Flights"],
+    "bullets": [
+      "Refactored the full-stack messaging/buffer system (Java, TS) to improve caching efficiency, reducing latency by 20%.",
+      "Built Angular autocomplete components, eliminating invalid options (98% to 0%) and improving UX.",
+      "Increased test coverage by 15%+ and audited accessibility across internal tools to ensure compliance within Travel org."
+    ],
+    "skills": ["Java", "TypeScript", "Angular", "Testing", "Accessibility"]
+  },
+  {
+    "jobtitle": "Machine Learning Engineer",
+    "company": "Microsoft",
+    "location": "Cambridge, MA",
+    "date": "January 2022",
+    "recency": 3,
+    "description": "Device Compatibility Classifier. Trained and deployed a binary classifier for Microsoft Intune compatibility.",
+    "image": "companylogos/microsoft.png",
+    "links": ["https://azure.microsoft.com/en-us/products/machine-learning/", "https://learn.microsoft.com/en-us/mem/intune/"],
+    "linksDes": ["Azure Machine Learning", "Microsoft Intune"],
+    "bullets": [
+      "Trained a binary classifier to predict Microsoft Intune compatibility from device specs, addressing a 99:1 class imbalance with SMOTE oversampling and achieving 97% accuracy (Azure ML).",
+      "Deployed the model as a web service (API) for automated device screening."
+    ],
+    "skills": ["Python", "Azure ML", "Machine Learning", "SMOTE", "APIs"]
+  },
+  {
+    "jobtitle": "Robotics Software Intern",
+    "company": "NVIDIA",
+    "location": "Santa Clara, CA",
+    "date": "June 2021 - August 2021",
+    "recency": 2,
+    "description": "Optimized robotics software for NVIDIA hardware.",
+    "image": "companylogos/nvidia.png",
+    "links": ["https://developer.nvidia.com/isaac-ros"],
+    "linksDes": ["NVIDIA Isaac ROS"],
+    "bullets": [
+      "Optimized OpenCV ROS2 packages to run faster on NVIDIA hardware, utilizing GPUs (C++).",
+      "Authored unit, integration, and benchmarking tests for robotics workloads (Python, Docker).",
+      "Resolved synchronization issues by implementing time policy algorithms, improving reliability (C++)."
+    ],
+    "skills": ["C++", "Python", "Docker", "OpenCV", "ROS2"]
+  },
+  {
+    "jobtitle": "Software Engineer",
+    "company": "MIT Office of Sustainability",
+    "location": "Cambridge, MA",
+    "date": "September 2020 - May 2021",
+    "recency": 1,
+    "description": "Developed geospatial data tools for flood risk analysis.",
+    "image": "companylogos/mitos.png",
+    "links": ["https://sustainability.mit.edu/", "https://sustainability.mit.edu/article/student-fellow-stories-piero-orderique"],
+    "linksDes": ["MITOS", "Interview"],
+    "bullets": [
+      "Identified $600M+ of potential flood risk damages to university property from flooding simulations.",
+      "Designed a Python package for reading and visualizing 300+ specialized geodata files (SciPy, matplotlib, NumPy).",
+      "Engineered data filters and custom compression, reducing geodata storage by 99.99% (1.1TB to 1MB)."
+    ],
+    "skills": ["Python", "SciPy", "matplotlib", "NumPy", "Geospatial Analysis", "ArcGIS"]
   }
 ]
