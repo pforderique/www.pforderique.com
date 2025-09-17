@@ -32,7 +32,7 @@ const AboutMe = (props) => {
           {visitor && (
             <p>
               <span className="u-highlight u-bold">Welcome!</span>
-              {` You are visitor ${visitor.number}!`}
+              {/* {` You are visitor ${visitor.number}!`} */}
             </p>
           )}
           {props.profileinfo.aboutmes.map((des, idx) => (
