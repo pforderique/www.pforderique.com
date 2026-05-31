@@ -50,10 +50,10 @@ app.use((err, req, res, next) => {
   });
 });
 
-const port = process.env.PORT || 3000;
+module.exports = app;
 
-const server = http.Server(app);
-
-server.listen(port, () => {
-  console.log(`Server running on port: ${port}`);
-});
+// local dev only
+if (require.main === module) {
+  const port = process.env.PORT || 3000;
+  http.Server(app).listen(port, () => console.log(`Server running on port: ${port}`));
+}
