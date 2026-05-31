@@ -11,6 +11,7 @@ const Profile = require("./data/profile.json");
 const Skills = require("./data/skills.json");
 const Visitors = require("./data/visitors.json");
 const Projects = require("./data/projects.json");
+const crypto = require("crypto");
 const express = require("express");
 
 // api endpoints:
@@ -93,6 +94,20 @@ router.get("/visitor", (req, res) => {
   //   }
   // )
   res.send(newvisitor);
+});
+
+router.get("/ebay/notifications", (req, res) => {
+  const challengeCode = req.query.challenge_code;
+  if (!challengeCode) return res.status(400).send({ msg: "Missing challenge_code" });
+
+  const token = process.env.EBAY_VERIFICATION_TOKEN;
+  const endpoint = "https://www.pforderique.com/api/ebay/notifications";
+  const hash = crypto.createHash("sha256").update(challengeCode + token + endpoint).digest("hex");
+  res.json({ challengeResponse: hash });
+});
+
+router.post("/ebay/notifications", (req, res) => {
+  res.sendStatus(200);
 });
 
 // anything else falls to this "not found" case
